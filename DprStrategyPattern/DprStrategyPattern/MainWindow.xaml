@@ -1,0 +1,118 @@
+﻿<Window x:Class="DprStrategyPattern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:chart="http://oxyplot.org/wpf"
+        
+        mc:Ignorable="d"
+        Title="Operating System Algorithm" Height="494.2" Width="678.6" Icon="Images/icon_diskscheduling.png">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"  Background="WhiteSmoke">
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0,5,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Column="0" Content="{Binding List}"
+                   Margin="3,0,0,0" VerticalAlignment="Center" HorizontalAlignment="left"></Label>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Button Content="Add manually" Command="{Binding AddRequestsManuallyCommand}" Height="24.8" Width="90" HorizontalAlignment="Right" IsEnabled="{Binding IsAddRequestsManuallyCommand}" ToolTip="Add requests manually"/>
+                    <Button Content="Random" Command="{Binding AddRandomCommand}" Height="24.8" Width="70" HorizontalAlignment="Right" Margin="5,0,5,0" IsEnabled="{Binding IsAddRandomCommandEnabled}" ToolTip="Generate requests randomly"/>
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Visibility="{Binding AddRequestsManuallyVisibility}" Margin="0,5,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Content="Queue: "
+                   Margin="3,0,0.2,0" Height="25" VerticalAlignment="Top"></Label>
+                <TextBox Grid.Column="1" Text="{Binding NewList}" Margin="5,0,5,0" ToolTip="Enter numbers separated by space or comas" PreviewTextInput="UIElement_OnPreviewTextInput"></TextBox>
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <Button Content="Add" Command="{Binding AddListCommand}" Width="75" IsEnabled="{Binding IsAddListCommandEnabled}" ></Button>
+                    <Button Content="Cancel" Command="{Binding CancelCommand}" Width="75" Margin="5,0,5,0" IsEnabled="{Binding IsCancelCommandEnabled}"></Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <chart:PlotView Grid.Column="0" Model="{Binding PlotModel}" Margin="-20,0,0,0"></chart:PlotView>
+            
+            <Grid Grid.Column="1" Margin="0,50,0,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Button x:Name="BtnRun" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" Width="80" Command="{Binding RunCommand}" IsEnabled="{Binding IsStartButtonEnabled}" Margin="0,5,0,5">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Source="Images/play.png" VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+                        <TextBlock Text="Run" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="BtnStop" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Width="80" Command="{Binding StopCommand}" IsEnabled="{Binding IsStopButtonEnabled}" Margin="0,5,0,5">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Source="Images/stop.png"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+                        <TextBlock Text="Run"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="BtnExportPicture" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center" Width="80" Command="{Binding ExportPngCommand}"  Visibility="Collapsed" IsEnabled="{Binding IsExportPngCommandEnabled}" Margin="0,5,0,5">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Source="Images/image.png"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+                        <TextBlock Text="Export"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <!--<Button x:Name="BtnCompare" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center" Width="80" Command="{Binding CompareCommand}" IsEnabled="{Binding IsStopButtonEnabled}" Margin="0,5,0,5">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Source="play.png"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+                        <TextBlock Text="Compare"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>-->
+
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2"  Background="WhiteSmoke" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Strategies: "  Grid.Column="0"  Margin="3,5,0,0"></Label>
+            <Button x:Name="Fifo" Content="FIFO" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Height="30" Command="{Binding FifoCommand}" IsEnabled="{Binding IsFifoButtonEnabled}" Margin="0,5,0,5"></Button>
+            <Button x:Name="SstfButton" Content="SSTF" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Height="30"  Command="{Binding SstfCommand}" IsEnabled="{Binding IsSstfButtonEnabled}" Margin="0,5,0,5"></Button>
+            <Button x:Name="ScanButton" Content="SCAN" Grid.Column="3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Height="30"  Command="{Binding ScanCommand}" IsEnabled="{Binding IsScanButtonEnabled}" Margin="0,5,0,5"></Button>
+        </Grid>
+
+        <Grid Grid.Row="3"  Background="WhiteSmoke">
+            <ListBox ItemsSource="{Binding CurrectRunningProceses}" Name="ListBoxOutput" Margin="10,0,9.6,20" ></ListBox>
+        </Grid>
+      
+    </Grid>
+</Window>

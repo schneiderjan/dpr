@@ -1,0 +1,40 @@
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.exe.config
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.exe.config
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.exe
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.cache
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.lref
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.baml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.g.resources
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.Properties.Resources.resources
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.GenerateResource.Cache
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.exe
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.exe
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.cache
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.lref
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.baml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.g.resources
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.Properties.Resources.resources
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.GenerateResource.Cache
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.exe
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.pdb

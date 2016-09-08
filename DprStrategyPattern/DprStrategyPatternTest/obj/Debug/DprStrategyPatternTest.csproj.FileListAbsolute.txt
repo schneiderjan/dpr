@@ -1,0 +1,38 @@
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.dll.config
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPattern.exe
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPattern.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.csprojResolveAssemblyReference.cache
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.dll.config
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPatternTest.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPattern.exe
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\DprStrategyPattern.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.csprojResolveAssemblyReference.cache
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\obj\Debug\DprStrategyPatternTest.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\OxyPlot.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.dll
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.Wpf.xml
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPatternTest\bin\Debug\PropertyTools.xml
