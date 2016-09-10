@@ -16,6 +16,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.suo
 
 # =========================
 # Operating System Files
@@ -44,4 +45,6 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+bin
+obj
 .apdisk
