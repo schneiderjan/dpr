@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public interface IObserver
+    interface IStormObserver
     {
-        void Update(WeatherData subject);
-
+        void Update(StormData subject);
     }
 }

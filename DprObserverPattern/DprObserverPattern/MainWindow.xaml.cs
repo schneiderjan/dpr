@@ -7,26 +7,22 @@ namespace DprObserverPattern
     /// </summary>
     public partial class MainWindow : Window
     {
-        private WeatherStation WeatherStation;
-        private Observer Observer;
+        private WeatherObserver weatherObserver;
+        private WeatherSubject weatherSubject;
 
         public MainWindow()
         {
             InitializeComponent();
+            weatherSubject = new WeatherSubject();
+            weatherObserver = new WeatherObserver(weatherSubject);
 
-            WeatherStation=new WeatherStation();
-            Observer = new Observer(WeatherStation);
-
-            WeatherStation.SetMeasurement(new WeatherData
+            weatherSubject.WeatherData = new WeatherData
             {
-                Degrees = new Degrees
-                {
-                    Temperature = 27.5f, Unit = "Celsius"
-                },
-                Humidity = 90,
-                Pressure = 75
-            });
-            
+                Temperature = 25,
+                Pressure = 0,
+                Humidity = 100,
+            };
+
         }
     }
 }

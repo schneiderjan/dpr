@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public class WeatherData
+    public class StormData
     {
-        public float Temperature { get; set; }
-        public float Pressure { get; set; }
-        public float Humidity { get; set; }
+        public bool IsStormAlert { get; set; }
+        public String Severity { get; set; }
     }
 }

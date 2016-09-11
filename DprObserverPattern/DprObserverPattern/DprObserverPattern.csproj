@@ -63,15 +63,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Observer.cs" />
-    <Compile Include="Subject.cs" />
+    <Compile Include="IStormObserver.cs" />
+    <Compile Include="StormData.cs" />
+    <Compile Include="WeatherObserver.cs" />
     <Compile Include="WeatherData.cs" />
-    <Compile Include="WeatherStation.cs" />
+    <Compile Include="WeatherSubject.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="IObserver.cs" />
+    <Compile Include="IWeatherObserver.cs" />
     <Compile Include="ISubject.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="App.xaml.cs">

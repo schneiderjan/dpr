@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public class WeatherData
+    public interface IPullObserver
     {
-        public float Temperature { get; set; }
-        public float Pressure { get; set; }
-        public float Humidity { get; set; }
+        void Update();
     }
 }
