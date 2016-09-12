@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using OpenWeatherMap;
+
 
 namespace DprObserverPattern
 {
     public class WeatherSubject : IPullSubject
     {
         private List<IPullObserver> observers;
-        private WeatherData weatherData;
+        private CurrentWeatherResponse weatherData;
+        private OpenWeatherMapClient weatherMapClient;
 
-        public WeatherData WeatherData {
+        public CurrentWeatherResponse WeatherData
+        {
             get { return weatherData; }
             set
             {
@@ -22,8 +27,11 @@ namespace DprObserverPattern
 
         public WeatherSubject()
         {
-            weatherData = new WeatherData();
+            weatherData = new CurrentWeatherResponse();
             observers = new List<IPullObserver>();
+
+            weatherMapClient = new OpenWeatherMapClient("c29ea3be75bc79b4fd54b5ea53cdd6aa");
+            FetchOpenWeatherMap__Worker();
         }
 
         public void Attach(IPullObserver observer)
@@ -39,15 +47,31 @@ namespace DprObserverPattern
 
         public void Notify()
         {
-            foreach(var obs in observers)
+            foreach (var obs in observers)
             {
                 obs.Update();
             }
         }
 
-        public WeatherData GetWeatherData()
+        public CurrentWeatherResponse GetWeatherData()
         {
             return this.weatherData;
+        }
+
+        /// <summary>
+        /// Worker thread which fetches weather info from OpenWeatherMapApi
+        /// </summary>
+        private async void FetchOpenWeatherMap__Worker()
+        {
+            await Task.Run(async () =>
+             {
+                 while (true)
+                 {
+                     WeatherData = await weatherMapClient.CurrentWeather.GetByName("Eindhoven");
+                     Thread.Sleep(1250);
+                 }
+             });
+
         }
     }
 }

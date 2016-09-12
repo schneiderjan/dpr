@@ -27,7 +27,6 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bi
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.xml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.pdb
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.xml
-D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.cache
@@ -38,3 +37,15 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\ob
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.GenerateResource.Cache
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.exe
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.pdb
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\OpenWeatherMap.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Extensions.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Primitives.dll
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Extensions.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Primitives.xml
+D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
