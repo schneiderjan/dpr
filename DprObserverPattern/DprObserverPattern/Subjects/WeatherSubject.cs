@@ -10,6 +10,7 @@ namespace DprObserverPattern
     {
         private List<IPullObserver> observers;
         private WeatherData weatherData;
+
         public WeatherData WeatherData {
             get { return weatherData; }
             set

@@ -67,8 +67,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="IStormObserver.cs" />
+    <Compile Include="IPushObserver.cs" />
+    <Compile Include="IPushSubject.cs" />
     <Compile Include="StormData.cs" />
+    <Compile Include="StormSubject.cs" />
     <Compile Include="WeatherObserver.cs" />
     <Compile Include="WeatherData.cs" />
     <Compile Include="WeatherSubject.cs" />
@@ -76,8 +78,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="IWeatherObserver.cs" />
-    <Compile Include="ISubject.cs" />
+    <Compile Include="IPullObserver.cs" />
+    <Compile Include="IPullSubject.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
