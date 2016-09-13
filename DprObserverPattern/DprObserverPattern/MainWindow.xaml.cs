@@ -10,15 +10,14 @@ namespace DprObserverPattern
     {
         private WeatherObserver weatherObserver;
         private WeatherSubject weatherSubject;
-        private ObserverViewModel _viewModel;
 
         public MainWindow()
         {
             InitializeComponent();
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
+            
 
-            _viewModel = new ObserverViewModel();
             DataContext = this;
         }
     }
