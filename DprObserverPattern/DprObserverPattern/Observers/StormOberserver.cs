@@ -23,6 +23,7 @@ namespace DprObserverPattern.Observers
             if (data is StormData && data != null) _stormData = (StormData)data;
         }
 
+        #region INotifyPropertyChanged
         //OnPropertyChanged Event
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -31,5 +32,6 @@ namespace DprObserverPattern.Observers
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
     }
 }

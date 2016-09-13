@@ -27,10 +27,7 @@ namespace DprObserverPattern.Observers
 
         public void Update(object data)
         {
-            if (data == null)
-            {
-                WeatherDataUi = _weatherSubject.GetWeatherData();
-            }
+            if (data == null) WeatherDataUi = _weatherSubject.GetWeatherData();
         }
 
         #region INotifyPropertyChanged
