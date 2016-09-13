@@ -16,7 +16,7 @@ namespace DprObserverPattern
             set
             {
                 stormData = value;
-                Notify();
+                base.Notify();
             }
         }
 
