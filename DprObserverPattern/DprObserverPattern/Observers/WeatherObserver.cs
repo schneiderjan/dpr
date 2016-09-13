@@ -1,32 +1,33 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using OpenWeatherMap;
 
-namespace DprObserverPattern
+namespace DprObserverPattern.Observers
 {
     public class WeatherObserver: IPullObserver, INotifyPropertyChanged
     {
-        private WeatherSubject weatherSubject;
+        private WeatherSubject _weatherSubject;
         private CurrentWeatherResponse _weatherData;
 
         public CurrentWeatherResponse WeatherDataUi
         {
             get { return _weatherData; }
-            set { _weatherData = value; OnPropertyChanged(); }
+            set
+            {
+                _weatherData = value;
+                OnPropertyChanged();
+            }
         }
 
         public WeatherObserver(WeatherSubject subject)
         {
-            weatherSubject = subject;
-            weatherSubject.Attach(this);
+            _weatherSubject = subject;
+            _weatherSubject.Attach(this);
         }
 
         public void Update()
         {
-           WeatherDataUi = weatherSubject.GetWeatherData();
+           WeatherDataUi = _weatherSubject.GetWeatherData();
         }
 
         //OnPropertyChanged Event
@@ -35,7 +36,8 @@ namespace DprObserverPattern
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

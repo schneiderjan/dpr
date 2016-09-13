@@ -11,7 +11,6 @@
             <RowDefinition Height="20" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Content="{Binding WeatherDataUi.Humidity}"></Label>
-        <Label Grid.Row="1" Content="frf"></Label>
+        <Label Grid.Row="0" Content="{Binding WeatherDataUi.Temperature.Value}"></Label>
     </Grid>
 </Window>

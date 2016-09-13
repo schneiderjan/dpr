@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using DprObserverPattern.Observers;
 
 namespace DprObserverPattern
 {
@@ -9,6 +10,7 @@ namespace DprObserverPattern
     {
         private WeatherObserver weatherObserver;
         private WeatherSubject weatherSubject;
+        private ObserverViewModel _viewModel;
 
         public MainWindow()
         {
@@ -16,13 +18,8 @@ namespace DprObserverPattern
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
 
-            //weatherSubject.WeatherData = new WeatherData
-            //{
-            //    Temperature = 25,
-            //    Pressure = 0,
-            //    Humidity = 100,
-            //};
-
+            _viewModel = new ObserverViewModel();
+            DataContext = this;
         }
     }
 }
