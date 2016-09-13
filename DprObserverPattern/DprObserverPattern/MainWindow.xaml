@@ -7,10 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Images/aring-pound-129-ccedil-ordm-cedil.jpg"/>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Content="{Binding WeatherDataUi.Temperature.Value}"></Label>
+        
+        <Grid Grid.Row="0">
+            <TextBox Text="Eindhoven" Margin="30,10,30,10" BorderBrush="Black" Background="Transparent" IsReadOnly="False"></TextBox>
+            <Button HorizontalAlignment="Right" Margin="0,0,30,0" Width="19" Height="19" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="Resources/Images/Search-100.png"></Image>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="30,10,30,10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Eindhoven" FontSize="25"></Label>
+            <Label Grid.Row="1" Content="{Binding WeatherDataUi.Temperature.Value}" FontSize="50"></Label>
+            <Label Grid.Row="2" Content="{Binding WeatherDataUi.Temperature.Value}" FontSize="25"></Label>
+            
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                
+                
+            </Grid>
+        </Grid>
+
+      
+        
+        
+        
     </Grid>
 </Window>

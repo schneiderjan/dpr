@@ -144,6 +144,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\aring-pound-129-ccedil-ordm-cedil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Cloud-100.png" />
+    <Resource Include="Resources\Images\Clouds-100.png" />
+    <Resource Include="Resources\Images\Light Rain 2-100.png" />
+    <Resource Include="Resources\Images\Light Rain-100.png" />
+    <Resource Include="Resources\Images\Light Snow-100.png" />
+    <Resource Include="Resources\Images\Moderate Rain-100.png" />
+    <Resource Include="Resources\Images\Rain-100.png" />
+    <Resource Include="Resources\Images\Sleet-100.png" />
+    <Resource Include="Resources\Images\Snow Storm-100.png" />
+    <Resource Include="Resources\Images\Snow-100.png" />
+    <Resource Include="Resources\Images\Sun-100.png" />
+    <Resource Include="Resources\Images\Thermometer-100.png" />
+    <Resource Include="Resources\Images\Torrential Rain-100.png" />
+    <Resource Include="Resources\Images\Umbrella-100.png" />
+    <Resource Include="Resources\Images\Wet-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Search-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
