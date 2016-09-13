@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DprObserverPattern"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        DataContext="{Binding}"
+        Title="MainWindow" Height="350" Width="525" >
+  
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Resources/Images/aring-pound-129-ccedil-ordm-cedil.jpg"/>
@@ -33,10 +34,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Content="Eindhoven" FontSize="25"></Label>
-            <Label Grid.Row="1" Content="{Binding WeatherDataUi.Temperature.Value}" FontSize="50"></Label>
-            <Label Grid.Row="2" Content="{Binding WeatherDataUi.Temperature.Value}" FontSize="25"></Label>
-            
+            <Label Grid.Row="1" x:Name="CityLabel" x:FieldModifier="public" FontSize="25"></Label>
+
+            <Label Grid.Row="2" x:Name="TemperatureLabel" x:FieldModifier="public" FontSize="50"></Label>
+
             <Grid Grid.Row="3">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
