@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace DprObserverPattern.Observers
+namespace DprObserverPattern
 {
     public class StormOberserver : IObserver, INotifyPropertyChanged
     {

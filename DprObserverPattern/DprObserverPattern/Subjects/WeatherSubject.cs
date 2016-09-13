@@ -46,7 +46,7 @@ namespace DprObserverPattern
                  while (true)
                  {
                      WeatherData = await weatherMapClient.CurrentWeather.GetByName("Eindhoven");
-                     Thread.Sleep(1000);
+                     Thread.Sleep(2000);
                  }
              });
         }

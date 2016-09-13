@@ -21,7 +21,6 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bi
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.cache
-D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.lref
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.baml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.g.resources
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.Properties.Resources.resources

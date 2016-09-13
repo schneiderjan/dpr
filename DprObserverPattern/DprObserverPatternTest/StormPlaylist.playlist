@@ -1,0 +1,5 @@
+<Playlist Version="1.0">
+<Add Test="DprObserverPatternTest.StormTest.StormSubject_Attach" />
+<Add Test="DprObserverPatternTest.StormTest.StormSubject_Notify" />
+<Add Test="DprObserverPatternTest.StormTest.StormSubject_Detach" />
+</Playlist>

@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using DprObserverPattern.Observers;
+using DprObserverPattern;
 using OpenWeatherMap;
 
 namespace DprObserverPattern

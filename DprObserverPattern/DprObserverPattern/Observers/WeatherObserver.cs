@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using OpenWeatherMap;
 
-namespace DprObserverPattern.Observers
+namespace DprObserverPattern
 {
     public class WeatherObserver : IObserver, INotifyPropertyChanged
     {

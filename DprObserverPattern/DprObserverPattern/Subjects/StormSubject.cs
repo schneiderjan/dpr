@@ -16,7 +16,8 @@ namespace DprObserverPattern
             set
             {
                 stormData = value;
-                base.Notify();
+                //base is not called here;
+                Notify(); 
             }
         }
 
@@ -24,7 +25,6 @@ namespace DprObserverPattern
         {
             stormData = new StormData();
         }
-
 
         public new virtual void Notify()
         {
