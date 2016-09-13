@@ -1,8 +1,9 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using OpenWeatherMap;
 
-namespace DprObserverPattern
+namespace DprObserverPattern.Observers
 {
     public class WeatherObserver : IObserver, INotifyPropertyChanged
     {
@@ -27,7 +28,11 @@ namespace DprObserverPattern
 
         public void Update(object data)
         {
-            if (data == null) WeatherDataUi = _weatherSubject.GetWeatherData();
+            if (data == null)
+            {
+                WeatherDataUi = _weatherSubject.GetWeatherData();
+                WeatherDataUi.Temperature.Value = Math.Round(WeatherDataUi.Temperature.Value- 273.15);
+            }
         }
 
         #region INotifyPropertyChanged

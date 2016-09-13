@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DprObserverPattern;
+using DprObserverPattern.Observers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenWeatherMap;
 

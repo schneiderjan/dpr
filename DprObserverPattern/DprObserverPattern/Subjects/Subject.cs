@@ -9,8 +9,8 @@ namespace DprObserverPattern
     public abstract class Subject : ISubject
     {
         public List<IObserver> Observers;
-        
-        public Subject()
+
+        protected Subject()
         {
             Observers = new List<IObserver>();
         }
