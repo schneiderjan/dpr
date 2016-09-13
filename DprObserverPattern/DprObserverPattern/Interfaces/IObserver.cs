@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public interface IPushObserver
+    public interface IObserver
     {
-        void Update(StormData stormData);
+        void Update(object data);
     }
 }

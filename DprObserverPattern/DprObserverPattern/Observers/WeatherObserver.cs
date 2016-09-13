@@ -4,7 +4,7 @@ using OpenWeatherMap;
 
 namespace DprObserverPattern.Observers
 {
-    public class WeatherObserver: IPullObserver, INotifyPropertyChanged
+    public class WeatherObserver : IObserver, INotifyPropertyChanged
     {
         private WeatherSubject _weatherSubject;
         private CurrentWeatherResponse _weatherData;
@@ -25,9 +25,9 @@ namespace DprObserverPattern.Observers
             _weatherSubject.Attach(this);
         }
 
-        public void Update()
+        public void Update(object data)
         {
-           WeatherDataUi = _weatherSubject.GetWeatherData();
+            WeatherDataUi = weatherSubject.GetWeatherData();
         }
 
         //OnPropertyChanged Event

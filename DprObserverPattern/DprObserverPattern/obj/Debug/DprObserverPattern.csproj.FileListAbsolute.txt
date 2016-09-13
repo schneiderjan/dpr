@@ -48,6 +48,7 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bi
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Extensions.xml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Primitives.xml
+<<<<<<< Updated upstream
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\DprObserverPattern.exe.config
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.exe
@@ -80,3 +81,5 @@ C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprO
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.g.resources
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.Properties.Resources.resources
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.GenerateResource.Cache
+=======
+>>>>>>> Stashed changes

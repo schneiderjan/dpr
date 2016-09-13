@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-   public class StormSubject : IPushSubject
+   public class StormSubject : ISubject
     {
-        private List<IPushObserver> observers;
+        private List<IObserver> observers;
         private StormData stormData;
         public StormData StormData {
             get { return stormData; }
@@ -23,15 +23,15 @@ namespace DprObserverPattern
         public StormSubject()
         {
             stormData = new StormData();
-            observers = new List<IPushObserver>();
+            observers = new List<IObserver>();
         }
 
-        public void Attach(IPushObserver observer)
+        public void Attach(IObserver observer)
         {
             observers.Add(observer);
         }
 
-        public void Detach(IPushObserver observer)
+        public void Detach(IObserver observer)
         {
             if (observers.Contains(observer))
                 observers.Remove(observer);
