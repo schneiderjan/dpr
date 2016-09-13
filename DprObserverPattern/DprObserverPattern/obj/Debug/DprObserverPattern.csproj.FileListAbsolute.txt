@@ -47,7 +47,6 @@ C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprO
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.xml
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.baml
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
@@ -57,3 +56,4 @@ C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprO
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.GenerateResource.Cache
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.exe
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.pdb
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.App.config

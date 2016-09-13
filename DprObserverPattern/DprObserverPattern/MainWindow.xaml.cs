@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using DprObserverPattern.Observers;
 
 namespace DprObserverPattern
@@ -8,29 +9,35 @@ namespace DprObserverPattern
     /// </summary>
     public partial class MainWindow : Window
     {
-        private WeatherObserver weatherObserver;
-        private WeatherSubject weatherSubject;
-        private WeatherAlertOberserver weatherAlertOberserver;
-        private WeatherAlertSubject weatherAlertSubject;
+        public WeatherObserver WeatherObserver;
+        public WeatherSubject WeatherSubject;
+        public WeatherAlertOberserver WeatherAlertOberserver;
+        public WeatherAlertSubject WeatherAlertSubject;
+
 
         public MainWindow()
         {
             InitializeComponent();
-            weatherAlertSubject = new WeatherAlertSubject();
-            weatherAlertOberserver = new WeatherAlertOberserver(weatherAlertSubject);
 
-            weatherSubject = new WeatherSubject();
-            weatherObserver = new WeatherObserver(weatherSubject);
+            WeatherAlertSubject = new WeatherAlertSubject();
+            WeatherAlertOberserver = new WeatherAlertOberserver(WeatherAlertSubject);
 
-            weatherSubject.SearchCity = "Manchester";
+            WeatherSubject = new WeatherSubject();
+            WeatherObserver = new WeatherObserver(WeatherSubject);
 
-            DataContext = weatherObserver;
+            //Set by default.
+            WeatherSubject.SearchCity = "Eindhoven";
+
+            DataContext = WeatherObserver;
         }
+
 
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            weatherSubject.SearchCity = CitySearchTextBox.Text;
+            WeatherSubject.SearchCity = CitySearchTextBox.Text;
         }
     }
+
+
 }

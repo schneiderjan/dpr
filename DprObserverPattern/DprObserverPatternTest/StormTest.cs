@@ -37,17 +37,17 @@ namespace DprObserverPatternTest
             StormSubject_Attach();
 
             //Arrange
-            WeatherAlerData data = new WeatherAlerData
+            WeatherAlertData data = new WeatherAlertData
             {
                 IsWeatherAlert = true,
                 Severity = "High"
             };
 
             //Act
-            subject.WeatherAlerData = data;
+            subject.WeatherAlertData = data;
 
             //Assert
-            Assert.AreEqual(subject.WeatherAlerData, observer.WeatherAlerDataUi);
+            Assert.AreEqual(subject.WeatherAlertData, observer.WeatherAlertDataUi);
         }
 
         [TestMethod]
