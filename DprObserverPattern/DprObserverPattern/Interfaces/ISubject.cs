@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public interface IPullObserver
+    public interface ISubject
     {
-        void Update();
+        void Attach(IObserver observer);
+        void Detach(IObserver observer);
+        void Notify();
     }
 }

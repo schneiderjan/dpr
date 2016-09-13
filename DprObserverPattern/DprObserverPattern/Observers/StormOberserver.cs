@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace DprObserverPattern.Observers
 {
-    public class StormOberserver : IPushObserver, INotifyPropertyChanged
+    public class StormOberserver : IObserver, INotifyPropertyChanged
     {
         private StormSubject stormSubject;
         private StormData _stormData;
@@ -18,9 +18,9 @@ namespace DprObserverPattern.Observers
             stormSubject = subject;
             stormSubject.Attach(this);
         }
-        public void Update(StormData stormData)
+        public void Update(object data)
         {
-            _stormData = stormData;
+            if (data is StormData && data != null) _stormData = (StormData)data;
         }
 
         //OnPropertyChanged Event
