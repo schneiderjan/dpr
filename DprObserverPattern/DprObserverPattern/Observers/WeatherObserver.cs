@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using OpenWeatherMap;
+using System.Windows;
 
 namespace DprObserverPattern.Observers
 {
@@ -23,6 +24,7 @@ namespace DprObserverPattern.Observers
         {
             _weatherSubject = subject;
             _weatherSubject.Attach(this);
+            
         }
 
         public void Update(object data)

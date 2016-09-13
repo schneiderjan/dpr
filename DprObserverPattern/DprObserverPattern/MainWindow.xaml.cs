@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using DprObserverPattern.Observers;
+using OpenWeatherMap;
 
 namespace DprObserverPattern
 {
@@ -17,8 +18,7 @@ namespace DprObserverPattern
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
             
-
-            DataContext = this;
+            DataContext = new CurrentWeatherResponse();
         }
     }
 }
