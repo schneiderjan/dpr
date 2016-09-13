@@ -1,14 +1,12 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using OpenWeatherMap;
-using System.Windows;
 
 namespace DprObserverPattern.Observers
 {
     public class WeatherObserver : IObserver, INotifyPropertyChanged
     {
-        private WeatherSubject _weatherSubject;
-
+        private readonly WeatherSubject _weatherSubject;
 
         private CurrentWeatherResponse _weatherDataUi;
         public CurrentWeatherResponse WeatherDataUi

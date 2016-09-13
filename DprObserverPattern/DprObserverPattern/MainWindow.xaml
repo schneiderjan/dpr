@@ -6,6 +6,7 @@
         mc:Ignorable="d"
         DataContext="{Binding}"
         Title="MainWindow" Height="350" Width="525" >
+  
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Resources/Images/aring-pound-129-ccedil-ordm-cedil.jpg"/>
@@ -33,10 +34,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Content="Eindhoven" FontSize="25"></Label>
+            <Label Grid.Row="1" x:Name="CityLabel" x:FieldModifier="public" FontSize="25"></Label>
 
-
-            <Label Grid.Row="2" Name="TemperatureLabel" DataContext="{Binding Path=WeatherDataUi}"  Content="{Binding Temperature.Value}" FontSize="50"></Label>
+            <Label Grid.Row="2" x:Name="TemperatureLabel" x:FieldModifier="public" FontSize="50"></Label>
 
             <Grid Grid.Row="3">
                 <Grid.RowDefinitions>

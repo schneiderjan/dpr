@@ -9,7 +9,7 @@ namespace DprObserverPattern
     /// </summary>
     public partial class MainWindow : Window
     {
-        private WeatherObserver weatherObserver;
+        public WeatherObserver weatherObserver;
         private WeatherSubject weatherSubject;
         private ViewModel _viewModel;
 
@@ -19,13 +19,14 @@ namespace DprObserverPattern
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
 
-            _viewModel=new ViewModel();
-
-
-
-            TemperatureLabel.DataContext = this;
-
-            //DataContext = this;
+            _viewModel = new ViewModel
+            {
+                Temperature = "",
+                City = "",
+                ObserverMainWindow = this
+            };
+            
+            DataContext = this;
         }
     }
 }

@@ -12,18 +12,18 @@ namespace DprObserverPattern
 {
     class ViewModel: INotifyPropertyChanged
     {
-        MainWindow ObserverMainWindow { get; set; }
+        public MainWindow ObserverMainWindow { get; set; }
 
         public ViewModel()
         {
-            Search=new DelegateCommand(_doSearch);
+            Search = new DelegateCommand(_doSearch);
         }
 
         public ICommand Search { get; private set; }
 
         private void _doSearch()
         {
-
+            Search=new DelegateCommand(_doSearch);
         }
 
         private string _city;
@@ -33,15 +33,13 @@ namespace DprObserverPattern
             set { _city = value; OnPropertyChanged(); }
         }
 
-        //private string _temperature;
-        //public string Temperature
-        //{
-        //    get { return _temperature; }
-        //    set { _temperature = value; OnPropertyChanged(); }
-        //}
-
-
-        //OnPropertyChanged Event
+        private string _temperature;
+        public string Temperature
+        {
+            get { return _temperature; }
+            set { _temperature = value; OnPropertyChanged(); }
+        }
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
