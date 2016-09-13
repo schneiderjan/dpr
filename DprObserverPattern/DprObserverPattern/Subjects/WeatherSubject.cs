@@ -9,9 +9,8 @@ using OpenWeatherMap;
 
 namespace DprObserverPattern
 {
-    public class WeatherSubject : ISubject
+    public class WeatherSubject : Subject
     {
-        private List<IObserver> observers;
         private CurrentWeatherResponse weatherData;
         private OpenWeatherMapClient weatherMapClient;
 
@@ -21,36 +20,15 @@ namespace DprObserverPattern
             set
             {
                 weatherData = value;
-                Notify();
+                base.Notify();
             }
         }
 
-        public WeatherSubject()
+        public WeatherSubject() : base()
         {
             weatherData = new CurrentWeatherResponse();
-            observers = new List<IObserver>();
-
             weatherMapClient = new OpenWeatherMapClient("c29ea3be75bc79b4fd54b5ea53cdd6aa");
             FetchOpenWeatherMap__Worker();
-        }
-
-        public void Attach(IObserver observer)
-        {
-            observers.Add(observer);
-        }
-
-        public void Detach(IObserver observer)
-        {
-            if (observers.Contains(observer))
-                observers.Remove(observer);
-        }
-
-        public void Notify()
-        {
-            foreach (var obs in observers)
-            {
-                obs.Update(null);
-            }
         }
 
         public CurrentWeatherResponse GetWeatherData()
@@ -71,7 +49,6 @@ namespace DprObserverPattern
                      Thread.Sleep(1250);
                  }
              });
-
         }
     }
 }

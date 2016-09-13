@@ -18,7 +18,6 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bi
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\PropertyTools.Wpf.xml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Extensions.xml
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\bin\Debug\System.Net.Http.Primitives.xml
-D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\MainWindow.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\App.g.cs
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern_MarkupCompile.cache

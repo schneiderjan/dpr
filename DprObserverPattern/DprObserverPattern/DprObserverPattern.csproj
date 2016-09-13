@@ -92,10 +92,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Data\StormData.cs" />
+    <Compile Include="Observers\Observer.cs" />
     <Compile Include="Observers\StormOberserver.cs" />
     <Compile Include="Subjects\StormSubject.cs" />
     <Compile Include="Observers\WeatherObserver.cs" />
     <Compile Include="Data\WeatherData.cs" />
+    <Compile Include="Subjects\Subject.cs" />
     <Compile Include="Subjects\WeatherSubject.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

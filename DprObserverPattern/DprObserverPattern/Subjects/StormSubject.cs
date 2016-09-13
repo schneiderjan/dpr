@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-   public class StormSubject : ISubject
+    public class StormSubject : Subject
     {
-        private List<IObserver> observers;
         private StormData stormData;
-        public StormData StormData {
+        public StormData StormData
+        {
             get { return stormData; }
             set
             {
@@ -20,26 +20,15 @@ namespace DprObserverPattern
             }
         }
 
-        public StormSubject()
+        public StormSubject() : base()
         {
             stormData = new StormData();
-            observers = new List<IObserver>();
         }
 
-        public void Attach(IObserver observer)
-        {
-            observers.Add(observer);
-        }
 
-        public void Detach(IObserver observer)
+        public new virtual void Notify()
         {
-            if (observers.Contains(observer))
-                observers.Remove(observer);
-        }
-
-        public void Notify()
-        {
-            foreach (var obs in observers)
+            foreach (var obs in Observers)
             {
                 obs.Update(stormData);
             }
