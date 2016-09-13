@@ -3,24 +3,24 @@ using System.Runtime.CompilerServices;
 
 namespace DprObserverPattern
 {
-    public class StormOberserver : IObserver, INotifyPropertyChanged
+    public class WeatherAlertOberserver : IObserver, INotifyPropertyChanged
     {
-        private StormSubject stormSubject;
-        private StormData _stormData;
-        public StormData StormDataUi
+        private WeatherAlertSubject _weatherAlertSubject;
+        private WeatherAlerData _weatherAlerData;
+        public WeatherAlerData WeatherAlerDataUi
         {
-            get { return _stormData; }
-            set { _stormData = value; OnPropertyChanged(); }
+            get { return _weatherAlerData; }
+            set { _weatherAlerData = value; OnPropertyChanged(); }
         }
 
-        public StormOberserver(StormSubject subject)
+        public WeatherAlertOberserver(WeatherAlertSubject subject)
         {
-            stormSubject = subject;
-            stormSubject.Attach(this);
+            _weatherAlertSubject = subject;
+            _weatherAlertSubject.Attach(this);
         }
         public void Update(object data)
         {
-            if (data is StormData && data != null) _stormData = (StormData)data;
+            if (data is WeatherAlerData && data != null) _weatherAlerData = (WeatherAlerData)data;
         }
 
         #region INotifyPropertyChanged

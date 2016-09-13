@@ -1,6 +1,5 @@
 ﻿using System.Windows;
-using DprObserverPattern;
-using OpenWeatherMap;
+using DprObserverPattern.Observers;
 
 namespace DprObserverPattern
 {
@@ -9,24 +8,29 @@ namespace DprObserverPattern
     /// </summary>
     public partial class MainWindow : Window
     {
-        public WeatherObserver weatherObserver;
+        private WeatherObserver weatherObserver;
         private WeatherSubject weatherSubject;
-        private ViewModel _viewModel;
+        private WeatherAlertOberserver weatherAlertOberserver;
+        private WeatherAlertSubject weatherAlertSubject;
 
         public MainWindow()
         {
             InitializeComponent();
+            weatherAlertSubject = new WeatherAlertSubject();
+            weatherAlertOberserver = new WeatherAlertOberserver(weatherAlertSubject);
+
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
 
-            _viewModel = new ViewModel
-            {
-                Temperature = "",
-                City = "",
-                ObserverMainWindow = this
-            };
-            
-            DataContext = this;
+            weatherSubject.SearchCity = "Manchester";
+
+            DataContext = weatherObserver;
+        }
+
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            weatherSubject.SearchCity = CitySearchTextBox.Text;
         }
     }
 }

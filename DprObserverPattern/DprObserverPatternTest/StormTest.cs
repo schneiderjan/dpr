@@ -7,13 +7,13 @@ namespace DprObserverPatternTest
     [TestClass]
     public class StormTest
     {
-        private static StormSubject subject;
-        private static StormOberserver observer;
+        private static WeatherAlertSubject subject;
+        private static WeatherAlertOberserver observer;
 
         [TestInitialize]
         public void Setup()
         {
-            subject = new StormSubject();
+            subject = new WeatherAlertSubject();
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace DprObserverPatternTest
             Setup();
             
             //Arrange|Act
-            observer = new StormOberserver(subject);
+            observer = new WeatherAlertOberserver(subject);
 
             //Assert
             Assert.AreEqual(1, subject.Observers.Count);
@@ -37,17 +37,17 @@ namespace DprObserverPatternTest
             StormSubject_Attach();
 
             //Arrange
-            StormData data = new StormData
+            WeatherAlerData data = new WeatherAlerData
             {
-                IsStormAlert = true,
+                IsWeatherAlert = true,
                 Severity = "High"
             };
 
             //Act
-            subject.StormData = data;
+            subject.WeatherAlerData = data;
 
             //Assert
-            Assert.AreEqual(subject.StormData, observer.StormDataUi);
+            Assert.AreEqual(subject.WeatherAlerData, observer.WeatherAlerDataUi);
         }
 
         [TestMethod]

@@ -1,39 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using OpenWeatherMap;
-
 
 namespace DprObserverPattern
 {
     public class WeatherSubject : Subject
     {
-        private CurrentWeatherResponse weatherData;
-        private OpenWeatherMapClient weatherMapClient;
+        private readonly OpenWeatherMapClient _weatherMapClient;
 
+        public string SearchCity { get; set; }
+
+        private CurrentWeatherResponse _weatherData;
         public CurrentWeatherResponse WeatherData
         {
-            get { return weatherData; }
+            get { return _weatherData; }
             set
             {
-                weatherData = value;
+                _weatherData = value;
                 base.Notify();
             }
         }
 
         public WeatherSubject() : base()
         {
-            weatherData = new CurrentWeatherResponse();
-            weatherMapClient = new OpenWeatherMapClient("c29ea3be75bc79b4fd54b5ea53cdd6aa");
+            _weatherData = new CurrentWeatherResponse();
+            _weatherMapClient = new OpenWeatherMapClient("c29ea3be75bc79b4fd54b5ea53cdd6aa");
             FetchOpenWeatherMap__Worker();
         }
 
         public CurrentWeatherResponse GetWeatherData()
         {
-            return this.weatherData;
+            return this._weatherData;
         }
 
         /// <summary>
@@ -45,10 +42,12 @@ namespace DprObserverPattern
              {
                  while (true)
                  {
-                     WeatherData = await weatherMapClient.CurrentWeather.GetByName("Eindhoven");
-                     Thread.Sleep(2000);
+                     WeatherData = await _weatherMapClient.CurrentWeather.GetByName(SearchCity);
+                     Thread.Sleep(1250);
                  }
              });
         }
+
+      
     }
 }
