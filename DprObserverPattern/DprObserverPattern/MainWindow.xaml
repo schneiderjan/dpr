@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="My weather" Height="350" Width="525" Icon="Resources/Images/Umbrella-100.png">
+        Title="My weather" Height="350" Width="525" Icon="Resources/Images/Umbrella-100.png"
+        >
   
     <Grid>
         <Grid.Background>
@@ -35,16 +36,16 @@
 
             <Label Grid.Row="0" x:Name="CityLabel" x:FieldModifier="public" DataContext="{Binding WeatherDataUi}" Content="{Binding City.Name}"  FontSize="25"></Label>
 
-            <StackPanel Grid.Row="1" Orientation="Horizontal"> 
-                 <Label  x:Name="TemperatureLabel" x:FieldModifier="public" DataContext="{Binding WeatherDataUi}" Content="{Binding Temperature.Value}" FontSize="50"></Label>
-                <Label Content="°C" FontSize="50"></Label>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Label  x:Name="TemperatureLabel" x:FieldModifier="public" DataContext="{Binding WeatherDataUi}" Content="{Binding Temperature.Value}" FontSize="50" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Label Content="°C" FontSize="50" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+                <Image Source="Resources/Images/Sun-100.png" HorizontalAlignment="Right" VerticalAlignment="Center" ></Image>
             </StackPanel>
             <Label Grid.Row="2" x:Name="InfoLabel" x:FieldModifier="public" DataContext="{Binding WeatherDataUi}" Content="{Binding Clouds.Name}" FontSize="25"></Label>
 
+            
             <Grid Grid.Row="3">
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -58,7 +59,6 @@
                     <Label Content="Sun sets at:"></Label>
                     <Label x:Name="SunSetLabel" x:FieldModifier="public" DataContext="{Binding WeatherDataUi}" Content="{Binding City.Sun.Set}"></Label>
                 </StackPanel>
-                
 
 
             </Grid>

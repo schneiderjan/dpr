@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,13 +6,13 @@ namespace DprObserverPattern
 {
     public class WeatherAlertSubject : Subject
     {
-        private WeatherAlerData _weatherAlerData;
-        public WeatherAlerData WeatherAlerData
+        private WeatherAlertData _weatherAlertData;
+        public WeatherAlertData WeatherAlertData
         {
-            get { return _weatherAlerData; }
+            get { return _weatherAlertData; }
             set
             {
-                _weatherAlerData = value;
+                _weatherAlertData = value;
                 //base is not called here;
                 Notify(); 
             }
@@ -23,7 +20,7 @@ namespace DprObserverPattern
 
         public WeatherAlertSubject() : base()
         {
-            _weatherAlerData = new WeatherAlerData();
+            _weatherAlertData = new WeatherAlertData();
             FetchWeatherAlert__Worker();
         }
 
@@ -37,10 +34,10 @@ namespace DprObserverPattern
             {
                 while (true)
                 {
-                    var randomNr = rnd.Next(0, 3);
+                    var randomNr = rnd.Next(0, 5);
                     if (randomNr == 2)
                     {
-                        WeatherAlerData = new WeatherAlerData
+                        WeatherAlertData = new WeatherAlertData
                         {
                             IsWeatherAlert = true,
                             Severity = "Dutch weather alert"
@@ -48,13 +45,13 @@ namespace DprObserverPattern
                     }
                     else
                     {
-                        WeatherAlerData = new WeatherAlerData
+                        WeatherAlertData = new WeatherAlertData
                         {
                             IsWeatherAlert = false,
                             Severity = null
                         };
                     }
-                    Thread.Sleep(2000);//Dutch weather happens not too frequently atm.
+                    Thread.Sleep(10000);//Dutch weather happens not too frequently atm. So look for other cities :)
                 }
             });
         }
@@ -63,7 +60,7 @@ namespace DprObserverPattern
         {
             foreach (var obs in Observers)
             {
-                obs.Update(_weatherAlerData);
+                obs.Update(_weatherAlertData);
             }
         }
     }

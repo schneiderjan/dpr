@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DprObserverPattern
 {
-    public class WeatherAlerData
+    public class WeatherAlertData
     {
         public bool IsWeatherAlert { get; set; }
         public string Severity { get; set; }

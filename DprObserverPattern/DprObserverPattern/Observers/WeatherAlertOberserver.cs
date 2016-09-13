@@ -1,16 +1,17 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 
 namespace DprObserverPattern
 {
     public class WeatherAlertOberserver : IObserver, INotifyPropertyChanged
     {
         private WeatherAlertSubject _weatherAlertSubject;
-        private WeatherAlerData _weatherAlerData;
-        public WeatherAlerData WeatherAlerDataUi
+        private WeatherAlertData _weatherAlertData;
+        public WeatherAlertData WeatherAlertDataUi
         {
-            get { return _weatherAlerData; }
-            set { _weatherAlerData = value; OnPropertyChanged(); }
+            get { return _weatherAlertData; }
+            set { _weatherAlertData = value; OnPropertyChanged(); }
         }
 
         public WeatherAlertOberserver(WeatherAlertSubject subject)
@@ -20,7 +21,11 @@ namespace DprObserverPattern
         }
         public void Update(object data)
         {
-            if (data is WeatherAlerData && data != null) _weatherAlerData = (WeatherAlerData)data;
+            if (data is WeatherAlertData && data != null)
+            {
+                _weatherAlertData = (WeatherAlertData)data;
+                MessageBox.Show("Extreme weather! " + _weatherAlertData.Severity);
+            }
         }
 
         #region INotifyPropertyChanged
