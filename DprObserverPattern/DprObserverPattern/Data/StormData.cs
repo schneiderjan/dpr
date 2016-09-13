@@ -9,6 +9,6 @@ namespace DprObserverPattern
     public class StormData
     {
         public bool IsStormAlert { get; set; }
-        public String Severity { get; set; }
+        public string Severity { get; set; }
     }
 }

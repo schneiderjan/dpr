@@ -3,15 +3,16 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using OpenWeatherMap;
 
 namespace DprObserverPattern
 {
     public class WeatherObserver: IPullObserver, INotifyPropertyChanged
     {
         private WeatherSubject weatherSubject;
-        private WeatherData _weatherData;
+        private CurrentWeatherResponse _weatherData;
 
-        public WeatherData WeatherDataUi
+        public CurrentWeatherResponse WeatherDataUi
         {
             get { return _weatherData; }
             set { _weatherData = value; OnPropertyChanged(); }
