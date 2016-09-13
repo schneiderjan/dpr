@@ -8,14 +8,15 @@ namespace DprObserverPattern.Observers
     public class WeatherObserver : IObserver, INotifyPropertyChanged
     {
         private WeatherSubject _weatherSubject;
-        private CurrentWeatherResponse _weatherData;
 
+
+        private CurrentWeatherResponse _weatherDataUi;
         public CurrentWeatherResponse WeatherDataUi
         {
-            get { return _weatherData; }
+            get { return _weatherDataUi; }
             set
             {
-                _weatherData = value;
+                _weatherDataUi = value;
                 OnPropertyChanged();
             }
         }
@@ -24,22 +25,24 @@ namespace DprObserverPattern.Observers
         {
             _weatherSubject = subject;
             _weatherSubject.Attach(this);
-            
         }
 
         public void Update(object data)
         {
-            if (data == null) WeatherDataUi = _weatherSubject.GetWeatherData();
+            if (data == null)
+            {
+                WeatherDataUi = _weatherSubject.GetWeatherData();
+            }
         }
 
-        //OnPropertyChanged Event
+        #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        public void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
+
     }
 }

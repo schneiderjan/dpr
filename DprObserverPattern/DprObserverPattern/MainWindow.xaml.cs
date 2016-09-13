@@ -11,14 +11,21 @@ namespace DprObserverPattern
     {
         private WeatherObserver weatherObserver;
         private WeatherSubject weatherSubject;
+        private ViewModel _viewModel;
 
         public MainWindow()
         {
             InitializeComponent();
             weatherSubject = new WeatherSubject();
             weatherObserver = new WeatherObserver(weatherSubject);
-            
-            DataContext = new CurrentWeatherResponse();
+
+            _viewModel=new ViewModel();
+
+
+
+            TemperatureLabel.DataContext = this;
+
+            //DataContext = this;
         }
     }
 }

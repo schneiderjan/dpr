@@ -95,8 +95,9 @@
     <Compile Include="Observers\StormOberserver.cs" />
     <Compile Include="Subjects\StormSubject.cs" />
     <Compile Include="Observers\WeatherObserver.cs" />
-    <Compile Include="Data\WeatherData.cs" />
     <Compile Include="Subjects\WeatherSubject.cs" />
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
