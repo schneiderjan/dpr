@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="DprObserverPatternTest.WeatherTest.WeatherSubject_Attach" /><Add Test="DprObserverPatternTest.WeatherTest.WeatherSubject_Notify" /><Add Test="DprObserverPatternTest.WeatherTest.WeatherSubject_Detach" /></Playlist>
