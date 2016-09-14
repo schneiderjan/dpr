@@ -1,0 +1,108 @@
+﻿<Window x:Class="DprDecoratorPattern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="PizzaMe @C.O." Height="537.063" Width="565.734" Icon="Images/Pizza-100.png">
+   
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Vertical">
+                <Label Content="PizzaMe" FontSize="40"></Label>
+                <Label Content="Orderyour pizza online at anytime."></Label>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Label Content="1. Please choose your pizza" Background="Cornsilk"></Label>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <ToggleButton Grid.Column="0" Grid.Row="0" Background="Transparent" Click="ButtonBase1_OnClick" Name="Button1" Checked="Button1_OnChecked"> 
+                <Image Source="Images/pizza1.png"></Image>
+            </ToggleButton>
+
+            <ToggleButton Grid.Column="0" Grid.Row="1" Background="Transparent" Click="ButtonBase2_OnClick" Name="Button2" Checked="Button2_OnChecked">
+                <Image Source="Images/pizza2.png"></Image>
+            </ToggleButton>
+
+            <ToggleButton Grid.Column="2" Grid.Row="0" Background="Transparent" Click="ButtonBase3_OnClick" Name="Button3" Checked="Button3_OnChecked">
+                <Image Source="Images/pizza1.png"></Image>
+            </ToggleButton>
+
+            <ToggleButton Grid.Column="2" Grid.Row="1" Background="Transparent" Click="ButtonBase4_OnClick" Name="Button4" Checked="Button4_OnChecked">
+                <Image Source="Images/pizza4.png"></Image>
+            </ToggleButton>
+
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <Label  Content="Margerita"></Label>
+                <Label  Content="8.75 €" FontSize="20"></Label>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Label  Content="Verdure"></Label>
+                <Label  Content="10.25 €" FontSize="20"></Label>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" Grid.Column="3">
+                <Label  Content="Funghi"></Label>
+                <Label  Content="11.50 €" FontSize="20"></Label>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="3">
+                <Label  Content="Salami"></Label>
+                <Label  Content="12 €" FontSize="20"></Label>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Label Content="2. Select extra if not skip." Background="Cornsilk"></Label>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                <CheckBox Content="Garlic: 1 €"  Name="CheckBox1"></CheckBox>
+                <CheckBox Content="Salami: 2 €"  Name="CheckBox2"></CheckBox>
+                <CheckBox Content="Rucola: 1.5 €" Name="CheckBox3"></CheckBox>
+                <CheckBox Content="Gorgonzola 2.5 €" Name="CheckBox4"></CheckBox>
+                <CheckBox Content="Parmezan 2 €"  Name="CheckBox5"></CheckBox>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Label Content="3. Order!" Background="Cornsilk"></Label>
+        </Grid>
+        
+        <Grid Grid.Row="6">
+            <Button Content="Order" FontSize="30" Background="Gainsboro" Click="ButtonBase_OnClick"></Button>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
