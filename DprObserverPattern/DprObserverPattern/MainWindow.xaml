@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
         
         <Grid Grid.Row="0">
-            <TextBox x:Name ="CitySearchTextBox" Margin="30,10,30,10" BorderBrush="Black" Background="Transparent" IsReadOnly="False"></TextBox>
-            <Button HorizontalAlignment="Right" Margin="0,0,30,0" Width="19" Height="19" Background="Transparent" BorderBrush="Transparent" Click="ButtonBase_OnClick">
+            <TextBox x:Name ="CitySearchTextBox" ToolTip="Please add a city name" Margin="30,10,30,10" BorderBrush="Black" Background="Transparent" IsReadOnly="False"></TextBox>
+            <Button HorizontalAlignment="Right" Margin="0,0,30,0" Width="19" ToolTip="Search" Height="19" Background="Transparent" BorderBrush="Transparent" Click="ButtonBase_OnClick">
                 <Image Source="Resources/Images/Search-100.png"></Image>
             </Button>
         </Grid>
