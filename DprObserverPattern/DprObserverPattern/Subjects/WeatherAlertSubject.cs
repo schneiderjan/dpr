@@ -51,7 +51,7 @@ namespace DprObserverPattern
                             Severity = null
                         };
                     }
-                    Thread.Sleep(10000);//Dutch weather happens not too frequently atm. So look for other cities :)
+                    Thread.Sleep(25000);//Dutch weather happens not too frequently atm. So look for other cities :)
                 }
             });
         }

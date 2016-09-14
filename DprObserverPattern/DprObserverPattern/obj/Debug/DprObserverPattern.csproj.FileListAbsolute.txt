@@ -58,4 +58,3 @@ C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprO
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.pdb
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.App.config
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csproj.App.config
-D:\Code\GitHub\4_fourth_year_block1\dpr\DprObserverPattern\DprObserverPattern\obj\Debug\DprObserverPattern.csprojResolveAssemblyReference.cache

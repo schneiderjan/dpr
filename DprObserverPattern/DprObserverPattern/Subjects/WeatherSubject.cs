@@ -43,7 +43,7 @@ namespace DprObserverPattern
                  while (true)
                  {
                      WeatherData = await _weatherMapClient.CurrentWeather.GetByName(SearchCity);
-                     Thread.Sleep(50000);
+                     Thread.Sleep(1250);
                  }
              });
         }

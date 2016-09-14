@@ -44,11 +44,12 @@ namespace DprObserverPatternTest
 
             //Arrange
             CurrentWeatherResponse data=null;
-            Task.Run(async () => {
-                data = await weatherMapClient.CurrentWeather.GetByName("Eindhoven");
-            });
+            subject.SearchCity = "Eindhoven";
 
             //Act
+            Task t = Task.Run(async () => {
+                data = await weatherMapClient.CurrentWeather.GetByName("Eindhoven");
+            });Task.WaitAll(t);
             subject.WeatherData = data;
 
             //Assert
