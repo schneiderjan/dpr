@@ -27,7 +27,7 @@ namespace DprDecoratorPattern
 
             try
             {
-                MessageBox.Show("You ordered " + pizza.Description + " for " + pizza.Cost());
+                MessageBox.Show("You ordered " + pizza.Description + " for " + pizza.Cost()+"€");
             }
             catch (Exception)
             {
