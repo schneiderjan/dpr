@@ -8,6 +8,6 @@ namespace DprDecoratorPattern
 {
     public abstract class Decorator: Pizza
     {
-        public abstract string GetDescription();
+
     }
 }

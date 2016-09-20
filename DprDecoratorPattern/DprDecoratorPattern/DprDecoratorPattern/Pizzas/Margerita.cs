@@ -10,7 +10,7 @@ namespace DprDecoratorPattern.Pizzas
     {
         public Margerita()
         {
-            Description = "Margerita";
+           Description = "Margerita";
         }
 
         public override double Cost()

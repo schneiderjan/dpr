@@ -17,7 +17,7 @@ namespace DprDecoratorPattern.PizzaExtras
 
         public override string GetDescription()
         {
-            return _pizza.Description + ", extra garlic";
+            return _pizza.GetDescription() + ", extra garlic";
         }
 
         public override double Cost()
