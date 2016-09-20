@@ -1,8 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DprDecoratorPattern;
 using DprDecoratorPattern.PizzaExtras;
-using DprDecoratorPattern.Pizzas;
 
 namespace DprDecoratorPatternTest
 {

@@ -53,6 +53,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="FunghiTest.cs" />
+    <Compile Include="MargeritaTest.cs" />
+    <Compile Include="SalamitTest.cs" />
     <Compile Include="VerdureTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
