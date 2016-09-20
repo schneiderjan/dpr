@@ -23,13 +23,13 @@ namespace DprDecoratorPattern
         {
             try
             {
-                if (CheckBox1.IsChecked != null && (bool) CheckBox1.IsChecked) _pizza = new Garlic(_pizza);
-                if (CheckBox2.IsChecked != null && (bool) CheckBox2.IsChecked) _pizza=new PizzaExtras.Salami(_pizza);
-                if (CheckBox3.IsChecked != null && (bool) CheckBox3.IsChecked) _pizza = new Rucola(_pizza);
-                if (CheckBox4.IsChecked != null && (bool) CheckBox4.IsChecked) _pizza=new Gorgonzola(_pizza);
-                if (CheckBox5.IsChecked != null && (bool) CheckBox5.IsChecked) _pizza=new Parmezan(_pizza);
+                if (CheckBox1.IsChecked != null && (bool)CheckBox1.IsChecked) _pizza = new Garlic(_pizza);
+                if (CheckBox2.IsChecked != null && (bool)CheckBox2.IsChecked) _pizza = new PizzaExtras.Salami(_pizza);
+                if (CheckBox3.IsChecked != null && (bool)CheckBox3.IsChecked) _pizza = new Rucola(_pizza);
+                if (CheckBox4.IsChecked != null && (bool)CheckBox4.IsChecked) _pizza = new Gorgonzola(_pizza);
+                if (CheckBox5.IsChecked != null && (bool)CheckBox5.IsChecked) _pizza = new Parmezan(_pizza);
 
-                MessageBox.Show("You ordered " + _pizza.GetDescription() + " for " + _pizza.Cost()+"€");
+                MessageBox.Show("You ordered " + _pizza.GetDescription() + " for " + _pizza.Cost() + "€");
 
                 Button1.IsChecked = false;
                 Button2.IsChecked = false;
@@ -46,7 +46,7 @@ namespace DprDecoratorPattern
             {
                 MessageBox.Show("Please select a pizza!");
             }
-           
+
         }
 
         private void ButtonBase1_OnClick(object sender, RoutedEventArgs e)
@@ -66,7 +66,7 @@ namespace DprDecoratorPattern
 
         private void ButtonBase4_OnClick(object sender, RoutedEventArgs e)
         {
-            _pizza=new Salami();
+            _pizza = new Salami();
         }
 
         private void Button1_OnChecked(object sender, RoutedEventArgs e)

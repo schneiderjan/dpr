@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DprDecoratorPattern.Pizzas
 {
-    class Salami:Pizza
+   public class Salami:Pizza
     {
         public Salami()
         {
