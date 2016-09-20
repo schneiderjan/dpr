@@ -64,6 +64,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Decorator.cs" />
+    <Compile Include="PizzaExtras\Garlic.cs" />
+    <Compile Include="PizzaExtras\Gorgonzola.cs" />
+    <Compile Include="PizzaExtras\Parmezan.cs" />
+    <Compile Include="PizzaExtras\Rucola.cs" />
+    <Compile Include="PizzaExtras\Salami.cs" />
     <Compile Include="Pizzas\Funghi.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

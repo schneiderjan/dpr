@@ -16,7 +16,7 @@ namespace DprDecoratorPattern
 
         public override double Cost()
         {
-            return 11.50 + base.Cost();
+            return 11.50;// + base.Cost();
         }
     }
 }

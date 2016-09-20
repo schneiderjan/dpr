@@ -54,3 +54,6 @@ D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPattern\bi
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPattern\bin\Debug\PropertyTools.Wpf.xml
 C:\Users\Georgiana Manolache\Documents\Uni\Semester7\DPR\Week1\dpr\DprStrategyPattern\DprStrategyPattern\obj\Debug\DprStrategyPattern.csprojResolveAssemblyReference.cache
 D:\Code\GitHub\4_fourth_year_block1\dpr\DprStrategyPattern\DprStrategyPattern\obj\Debug\DprStrategyPattern.csprojResolveAssemblyReference.cache
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprStrategyPattern\DprStrategyPattern\bin\Debug\DprStrategyPattern.exe.config
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprStrategyPattern\DprStrategyPattern\obj\Debug\DprStrategyPattern.exe
+C:\Users\Georgiana Manolache\Documents\Uni\Semester7\dpr\DprStrategyPattern\DprStrategyPattern\obj\Debug\DprStrategyPattern.pdb

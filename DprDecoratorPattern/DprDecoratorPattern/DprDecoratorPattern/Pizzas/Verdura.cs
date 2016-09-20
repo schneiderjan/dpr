@@ -15,7 +15,7 @@ namespace DprDecoratorPattern.Pizzas
 
         public override double Cost()
         {
-            return 10.25 + base.Cost();
+            return 10.25;// + base.Cost();
         }
     }
 }
