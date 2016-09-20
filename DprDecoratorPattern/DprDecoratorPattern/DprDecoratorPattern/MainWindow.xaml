@@ -22,7 +22,7 @@
         <Grid Grid.Row="0">
             <StackPanel Orientation="Vertical">
                 <Label Content="PizzaMe" FontSize="40"></Label>
-                <Label Content="Orderyour pizza online at anytime."></Label>
+                <Label Content="Order your pizza online at anytime."></Label>
             </StackPanel>
         </Grid>
 
