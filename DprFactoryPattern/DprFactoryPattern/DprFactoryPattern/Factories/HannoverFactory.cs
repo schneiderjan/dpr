@@ -3,24 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DprFactoryPattern.CarParts;
+using DprFactoryPattern.Hannover;
 
 namespace DprFactoryPattern.Factories
 {
     class HannoverFactory: IVwAbstractFactory
     {
-        public void CreateHood()
+        public IHood CreateHood()
         {
-            throw new NotImplementedException();
+            return new GolfHood();
         }
 
-        public void CreateAxe()
+        public IAxe CreateAxe()
         {
-            throw new NotImplementedException();
+            return new GolfAxe();
         }
 
-        public void CreateInterior()
+        public IInterior CreateInterior()
         {
-            throw new NotImplementedException();
+            return new GolfInterior();
         }
     }
 }

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern
 {
-    interface IVwAbstractFactory
+    public interface IVwAbstractFactory
     {
-        void CreateHood();
-        void CreateAxe();
-        void CreateInterior();
+        IHood CreateHood();
+        IAxe CreateAxe();
+        IInterior CreateInterior();
 
     }
 }

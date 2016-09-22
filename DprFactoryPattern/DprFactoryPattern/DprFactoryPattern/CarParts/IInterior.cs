@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DprFactoryPattern.CarParts
 {
-    interface IInterior
+    public interface IInterior
     {
     }
 }

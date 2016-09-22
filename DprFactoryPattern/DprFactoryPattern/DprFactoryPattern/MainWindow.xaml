@@ -3,10 +3,69 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DprFactoryPattern"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="VW Factories" Height="350" Width="525" Icon="Resources/Images/volkswagen-512.png">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Clear" Name="ClearOrderMenuItem" Click="ClearOrderMenuItem_OnClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="File" Name="HelpMenuItem" Click="HelpMenuItem_OnClick"></MenuItem>
+        </Menu>
         
+        <Grid Grid.Row="1">
+        <Label Content="VW Factories" FontSize="30" HorizontalAlignment="Left" Margin="10"></Label>
+        <Image Source="Resources/Images/Volkswagen_Logo.png" Height="70" Width="70" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10"></Image>
+        </Grid>
+
+        <TabControl Grid.Row="2">
+            <TabItem Name="WolfsburgTabItem" Header="Wolfsburg">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <StackPanel Orientation="Horizontal">
+                    <ToggleButton Name="PoloToggleButton" Click="PoloToggleButton_OnClick">
+                            <Image Source="Resources/Images/polo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"></Image>
+                        </ToggleButton>
+                    <Label Content="Polo"></Label>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Name="HannoverTabItem" Header="Hannover">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleButton Name="GolfToggleButton" Click="GolfToggleButton_OnClick">
+                            <Image Source="Resources/Images/golf.png" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"></Image>
+                        </ToggleButton>
+                        <Label Content="Golf"></Label>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+        <Grid Grid.Row="3" Height="50" Margin="0,20,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Button Content="Order"  Grid.Column="0" Background="Transparent"></Button>
+            <Button Content="Clear" Grid.Column="1" Background="Transparent"></Button>
+        </Grid>
     </Grid>
 </Window>

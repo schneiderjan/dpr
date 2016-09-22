@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern
 {
-    abstract class Car
+    public abstract class Car: IAxe, IHood, IInterior
     {
+        public string Name="Unknown";
+
+        public IAxe Axe;
+        public IHood Hood;
+        public IInterior Interior;
+
+        public abstract string Assemble();
         
     }
 }

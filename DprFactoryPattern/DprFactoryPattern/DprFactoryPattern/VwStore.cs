@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DprFactoryPattern.Dusseldorf
+namespace DprFactoryPattern
 {
-    public class SUVAxe
+    public abstract class VwStore
     {
+        public abstract Car createCar();
     }
 }

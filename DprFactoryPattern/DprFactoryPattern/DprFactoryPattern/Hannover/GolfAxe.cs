@@ -7,7 +7,7 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Hannover
 {
-    public class GolfAxe
+    public class GolfAxe: IAxe
     {
     }
 }
