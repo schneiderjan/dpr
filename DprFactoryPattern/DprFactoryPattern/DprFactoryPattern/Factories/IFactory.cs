@@ -4,9 +4,9 @@ namespace DprFactoryPattern
 {
     public interface IFactory
     {
-        IHood CreateHood();
-        IAxe CreateAxe();
-        IInterior CreateInterior();
+        IComponent CreateHood();
+        IComponent CreateAxe();
+        IComponent CreateInterior();
 
     }
 }

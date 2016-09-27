@@ -8,14 +8,14 @@ using DprFactoryPattern.Hannover;
 
 namespace DprFactoryPattern.Factories
 {
-    class HannoverFactory: IFactory
+    public class HannoverFactory: IFactory
     {
         public IHood CreateHood()
         {
             return new GolfHood();
         }
 
-        public IAxe CreateAxe()
+        public IComponent CreateAxe()
         {
             return new GolfAxe();
         }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DprFactoryPattern.CarParts
 {
-    public interface IInterior
+    public interface IComponent
     {
         string GetName();
         int GetPrice();
-
     }
 }

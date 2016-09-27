@@ -15,7 +15,6 @@ namespace DprFactoryPattern.Wolfsburg
         {
             this.vwFactory = vwFactory;
             Name = "Polo";
-            Assemble();
         }
 
         public override string Assemble()
