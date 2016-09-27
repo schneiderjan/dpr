@@ -9,19 +9,19 @@ using DprFactoryPattern.Wolfsburg;
 
 namespace DprFactoryPattern.Factories
 {
-    class WolfsburgFactory: IFactory
+    public class WolfsburgFactory: IFactory
     {
-        public IHood CreateHood()
+        public IComponent CreateHood()
         {
             return new PoloHood();
         }
 
-        public IAxe CreateAxe()
+        public IComponent CreateAxe()
         {
             return new PoloAxe();
         }
 
-        public IInterior CreateInterior()
+        public IComponent CreateInterior()
         {
             return new PoloInterior(); 
         }

@@ -7,7 +7,7 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Wolfsburg
 {
-    public class PoloHood: IHood
+    public class PoloHood: IComponent
     {
         
 

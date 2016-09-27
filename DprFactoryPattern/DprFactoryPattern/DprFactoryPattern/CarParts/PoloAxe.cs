@@ -7,7 +7,7 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Wolfsburg
 {
-    public class PoloAxe: IAxe
+    public class PoloAxe: IComponent
     {
       
 
