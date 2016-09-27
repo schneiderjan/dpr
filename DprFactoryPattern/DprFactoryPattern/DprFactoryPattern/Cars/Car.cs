@@ -9,8 +9,20 @@ namespace DprFactoryPattern
         public IComponent Axe;
         public IComponent Hood;
         public IComponent Interior;
+        private IFactory vwFactory;
 
-        public abstract string Assemble();
+        public Car(IFactory factory)
+        {
+            vwFactory = factory;
+        }
+
+        public string Assemble()
+        {
+            Hood = vwFactory.CreateHood();
+            Axe = vwFactory.CreateAxe();
+            Interior = vwFactory.CreateInterior();
+            return "Assembling " + Name;
+        }
 
         public override string ToString()
         {

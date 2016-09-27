@@ -8,20 +8,9 @@ namespace DprFactoryPattern.Hannover
 {
     public class Golf: Car
     {
-        private IFactory vwFactory;
-
-        public Golf(IFactory vwFactory)
+        public Golf(IFactory vwFactory) : base(vwFactory)
         {
-            this.vwFactory = vwFactory;
             Name = "Golf";
-        }
-
-        public override string Assemble()
-        {
-            Hood = vwFactory.CreateHood();
-            Axe = vwFactory.CreateAxe();
-            Interior = vwFactory.CreateInterior();
-            return "Assembling " + Name;
         }
     }
 }
