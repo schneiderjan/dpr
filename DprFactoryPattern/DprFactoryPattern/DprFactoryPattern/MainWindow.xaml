@@ -17,7 +17,6 @@
             <MenuItem Header="File">
                 <MenuItem Header="Clear" Name="ClearOrderMenuItem" Click="ClearOrderMenuItem_OnClick"></MenuItem>
             </MenuItem>
-            <MenuItem Header="File" Name="HelpMenuItem" Click="HelpMenuItem_OnClick"></MenuItem>
         </Menu>
         
         <Grid Grid.Row="1">
