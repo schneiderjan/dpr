@@ -60,12 +60,12 @@
     <Compile Include="CarParts\IHood.cs" />
     <Compile Include="CarParts\IInterior.cs" />
     <Compile Include="Factories\HannoverFactory.cs" />
+    <Compile Include="Factories\IFactory.cs" />
     <Compile Include="Factories\WolfsburgFactory.cs" />
     <Compile Include="Cars\Golf.cs" />
     <Compile Include="CarParts\GolfAxe.cs" />
     <Compile Include="CarParts\GolfHood.cs" />
     <Compile Include="CarParts\GolfInterior.cs" />
-    <Compile Include="Factories\IVwAbstractFactory.cs" />
     <Compile Include="Cars\Polo.cs" />
     <Compile Include="CarParts\PoloAxe.cs" />
     <Compile Include="CarParts\PoloHood.cs" />
