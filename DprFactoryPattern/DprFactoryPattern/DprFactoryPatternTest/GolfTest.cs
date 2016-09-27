@@ -24,5 +24,20 @@ namespace DprFactoryPatternTest
             Assert.AreEqual(golf.Hood.GetPrice(), 600);
             Assert.AreEqual(golf.Interior.GetPrice(), 7500);
         }
+
+        [TestMethod]
+        public void GolfInDifferentFactory_Test()
+        {
+            //Arrange
+            var golf = new Golf(new WolfsburgFactory());
+
+            //Act
+            golf.Assemble();
+
+            //Assert
+            Assert.AreEqual(golf.Axe.GetPrice(), 6340);
+            Assert.AreEqual(golf.Hood.GetPrice(), 9650);
+            Assert.AreEqual(golf.Interior.GetPrice(), 14300);
+        }
     }
 }
