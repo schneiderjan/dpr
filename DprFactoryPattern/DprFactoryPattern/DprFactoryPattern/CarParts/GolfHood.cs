@@ -13,5 +13,10 @@ namespace DprFactoryPattern.Hannover
         {
             return "GolfHood";
         }
+
+        public int GetPrice()
+        {
+            return 600;
+        }
     }
 }

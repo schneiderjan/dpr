@@ -9,5 +9,6 @@ namespace DprFactoryPattern.CarParts
     public interface IAxe
     {
         string GetName();
+        int GetPrice();
     }
 }

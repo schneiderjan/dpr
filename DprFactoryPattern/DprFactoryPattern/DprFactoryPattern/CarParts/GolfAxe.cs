@@ -14,5 +14,10 @@ namespace DprFactoryPattern.Hannover
         {
             return "GolfAxe";
         }
+
+        public int GetPrice()
+        {
+            return 2420;
+        }
     }
 }

@@ -15,5 +15,10 @@ namespace DprFactoryPattern.Wolfsburg
         {
             return "PoloAxe";
         }
+
+        public int GetPrice()
+        {
+            return 6340;
+        }
     }
 }

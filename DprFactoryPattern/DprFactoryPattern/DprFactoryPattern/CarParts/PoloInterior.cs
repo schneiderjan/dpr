@@ -13,5 +13,10 @@ namespace DprFactoryPattern.Wolfsburg
         {
             return "PoloInterior";
         }
+
+        public int GetPrice()
+        {
+            return 14300;
+        }
     }
 }

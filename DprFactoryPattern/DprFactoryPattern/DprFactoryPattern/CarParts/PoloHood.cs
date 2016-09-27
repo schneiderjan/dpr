@@ -15,5 +15,10 @@ namespace DprFactoryPattern.Wolfsburg
         {
             return "PoloHood";
         }
+
+        public int GetPrice()
+        {
+            return 9650;
+        }
     }
 }

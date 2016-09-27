@@ -9,5 +9,7 @@ namespace DprFactoryPattern.CarParts
     public interface IInterior
     {
         string GetName();
+        int GetPrice();
+
     }
 }

@@ -14,7 +14,9 @@ namespace DprFactoryPattern
 
         public override string ToString()
         {
-            return string.Format("Volkswagen {0} with {1}, {2}, and {3}", Name, Axe.GetName(), Hood.GetName(), Interior.GetName());
+            var total = Axe.GetPrice() + Hood.GetPrice() + Interior.GetPrice();
+            return string.Format("Volkswagen {0} with {1}({2}€), {3}({4}€), and {5}({6}€) for a total of {7}€",
+                Name, Axe.GetName(), Axe.GetPrice(), Hood.GetName(), Hood.GetPrice(), Interior.GetName(), Interior.GetPrice(),total);
         }
 
     }

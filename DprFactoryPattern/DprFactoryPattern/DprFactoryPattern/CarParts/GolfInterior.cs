@@ -13,5 +13,10 @@ namespace DprFactoryPattern.Hannover
         {
             return "GolfInterior";
         }
+
+        public int GetPrice()
+        {
+            return 7500;
+        }
     }
 }
