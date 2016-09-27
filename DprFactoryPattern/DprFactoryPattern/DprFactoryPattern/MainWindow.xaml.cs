@@ -37,6 +37,7 @@ namespace DprFactoryPattern
             store = new WolfsburgStore();
             //store.createCar();
             MessageBox.Show(store.createCar().Assemble());
+
         }
 
         private void GolfToggleButton_OnClick(object sender, RoutedEventArgs e)
