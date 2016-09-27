@@ -8,9 +8,9 @@ namespace DprFactoryPattern.Hannover
 {
     public class Golf: Car
     {
-        private IVwAbstractFactory vwFactory;
+        private IFactory vwFactory;
 
-        public Golf(IVwAbstractFactory vwFactory)
+        public Golf(IFactory vwFactory)
         {
             this.vwFactory = vwFactory;
             Name = "Golf";

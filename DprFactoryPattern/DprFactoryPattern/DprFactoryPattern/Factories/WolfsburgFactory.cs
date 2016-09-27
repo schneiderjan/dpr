@@ -9,7 +9,7 @@ using DprFactoryPattern.Wolfsburg;
 
 namespace DprFactoryPattern.Factories
 {
-    class WolfsburgFactory: IVwAbstractFactory
+    class WolfsburgFactory: IFactory
     {
         public IHood CreateHood()
         {

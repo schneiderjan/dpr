@@ -2,7 +2,7 @@
 
 namespace DprFactoryPattern
 {
-    public interface IVwAbstractFactory
+    public interface IFactory
     {
         IHood CreateHood();
         IAxe CreateAxe();

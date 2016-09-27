@@ -9,9 +9,9 @@ namespace DprFactoryPattern.Wolfsburg
 {
     public class Polo: Car
     {
-        private IVwAbstractFactory vwFactory;
+        private IFactory vwFactory;
 
-        public Polo(IVwAbstractFactory vwFactory)
+        public Polo(IFactory vwFactory)
         {
             this.vwFactory = vwFactory;
             Name = "Polo";

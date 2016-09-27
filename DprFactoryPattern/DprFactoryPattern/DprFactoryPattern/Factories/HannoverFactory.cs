@@ -8,7 +8,7 @@ using DprFactoryPattern.Hannover;
 
 namespace DprFactoryPattern.Factories
 {
-    class HannoverFactory: IVwAbstractFactory
+    class HannoverFactory: IFactory
     {
         public IHood CreateHood()
         {
