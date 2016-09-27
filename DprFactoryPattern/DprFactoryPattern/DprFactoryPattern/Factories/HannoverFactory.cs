@@ -10,7 +10,7 @@ namespace DprFactoryPattern.Factories
 {
     public class HannoverFactory: IFactory
     {
-        public IHood CreateHood()
+        public IComponent CreateHood()
         {
             return new GolfHood();
         }
@@ -20,7 +20,7 @@ namespace DprFactoryPattern.Factories
             return new GolfAxe();
         }
 
-        public IInterior CreateInterior()
+        public IComponent CreateInterior()
         {
             return new GolfInterior();
         }

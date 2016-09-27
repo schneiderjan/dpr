@@ -11,7 +11,7 @@ namespace DprFactoryPatternTest
     public class PoloTest
     {
         [TestMethod]
-        public void PoloPartsAreValid_Test()
+        public void PoloPartsAreValidPrice_Test()
         {
             //Arrange
             var polo = new Polo(new WolfsburgFactory());
@@ -20,7 +20,9 @@ namespace DprFactoryPatternTest
             polo.Assemble();
 
             //Assert
-            Assert.AreEqual()
+            Assert.AreEqual(polo.Axe.GetPrice(), 6340);
+            Assert.AreEqual(polo.Hood.GetPrice(), 9650);
+            Assert.AreEqual(polo.Interior.GetPrice(), 14300);
         }
     }
 }
