@@ -7,7 +7,11 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Hannover
 {
-    public class GolfInterior: IInterior
+    public class GolfInterior : IInterior
     {
+        public string GetName()
+        {
+            return "GolfInterior";
+        }
     }
 }

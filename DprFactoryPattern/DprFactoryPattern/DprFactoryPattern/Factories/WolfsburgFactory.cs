@@ -23,7 +23,7 @@ namespace DprFactoryPattern.Factories
 
         public IInterior CreateInterior()
         {
-            return new GolfInterior(); 
+            return new PoloInterior(); 
         }
     }
 }

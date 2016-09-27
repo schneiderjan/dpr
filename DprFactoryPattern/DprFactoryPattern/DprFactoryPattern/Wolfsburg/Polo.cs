@@ -15,6 +15,7 @@ namespace DprFactoryPattern.Wolfsburg
         {
             this.vwFactory = vwFactory;
             Name = "Polo";
+            Assemble();
         }
 
         public override string Assemble()
@@ -23,7 +24,7 @@ namespace DprFactoryPattern.Wolfsburg
             Axe = vwFactory.CreateAxe();
             Interior = vwFactory.CreateInterior();
 
-            return "Preparing " + Name;
+            return "Assembling " + Name;
         }
     }
 }

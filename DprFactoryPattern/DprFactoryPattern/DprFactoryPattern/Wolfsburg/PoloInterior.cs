@@ -7,13 +7,11 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Wolfsburg
 {
-    public class PoloInterior: IInterior
+    public class PoloInterior : IInterior
     {
-        public string Name;
-
-        public PoloInterior()
+        public string GetName()
         {
-            Name = "Interior type: Polo";
+            return "PoloInterior";
         }
     }
 }

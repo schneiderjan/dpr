@@ -64,8 +64,8 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            <Button Content="Order"  Grid.Column="0" Background="Transparent"></Button>
-            <Button Content="Clear" Grid.Column="1" Background="Transparent"></Button>
+            <Button Content="Order"  Grid.Column="0" Background="Transparent" Click="Button_Click"></Button>
+            <Button Content="Clear" Grid.Column="1" Background="Transparent" Click="Button_Click_1"></Button>
         </Grid>
     </Grid>
 </Window>

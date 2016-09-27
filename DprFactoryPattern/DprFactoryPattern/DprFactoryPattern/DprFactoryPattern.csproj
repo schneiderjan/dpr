@@ -65,14 +65,11 @@
     <Compile Include="Hannover\GolfAxe.cs" />
     <Compile Include="Hannover\GolfHood.cs" />
     <Compile Include="Hannover\GolfInterior.cs" />
-    <Compile Include="Hannover\HannoverStore.cs" />
     <Compile Include="IVwAbstractFactory.cs" />
-    <Compile Include="VwStore.cs" />
     <Compile Include="Wolfsburg\Polo.cs" />
     <Compile Include="Wolfsburg\PoloAxe.cs" />
     <Compile Include="Wolfsburg\PoloHood.cs" />
     <Compile Include="Wolfsburg\PoloInterior.cs" />
-    <Compile Include="Wolfsburg\WolfsburgStore.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

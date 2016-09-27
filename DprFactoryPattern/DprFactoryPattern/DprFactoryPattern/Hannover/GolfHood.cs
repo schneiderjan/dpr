@@ -7,7 +7,11 @@ using DprFactoryPattern.CarParts;
 
 namespace DprFactoryPattern.Hannover
 {
-    public class GolfHood: IHood
+    public class GolfHood : IHood
     {
+        public string GetName()
+        {
+            return "GolfHood";
+        }
     }
 }

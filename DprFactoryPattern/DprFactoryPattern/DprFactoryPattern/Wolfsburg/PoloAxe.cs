@@ -9,10 +9,11 @@ namespace DprFactoryPattern.Wolfsburg
 {
     public class PoloAxe: IAxe
     {
-        public string Name;
-        public PoloAxe()
+      
+
+        public string GetName()
         {
-            Name = "Axe type: Polo";
+            return "PoloAxe";
         }
     }
 }

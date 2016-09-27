@@ -8,5 +8,6 @@ namespace DprFactoryPattern.CarParts
 {
     public interface IHood
     {
+        string GetName();
     }
 }

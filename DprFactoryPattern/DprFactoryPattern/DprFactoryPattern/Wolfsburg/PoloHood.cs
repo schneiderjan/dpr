@@ -9,10 +9,11 @@ namespace DprFactoryPattern.Wolfsburg
 {
     public class PoloHood: IHood
     {
-        public string Name;
-        public PoloHood()
+        
+
+        public string GetName()
         {
-            Name = "Hood type: Polo";
+            return "PoloHood";
         }
     }
 }

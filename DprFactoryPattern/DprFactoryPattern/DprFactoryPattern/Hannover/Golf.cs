@@ -21,7 +21,7 @@ namespace DprFactoryPattern.Hannover
             Hood = vwFactory.CreateHood();
             Axe = vwFactory.CreateAxe();
             Interior = vwFactory.CreateInterior();
-            return "Preparing " + Name;
+            return "Assembling " + Name;
         }
     }
 }
