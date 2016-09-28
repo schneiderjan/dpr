@@ -9,21 +9,9 @@ namespace DprFactoryPattern.Wolfsburg
 {
     public class Polo: Car
     {
-        private IFactory vwFactory;
-
-        public Polo(IFactory vwFactory)
+        public Polo(IFactory vwFactory) : base(vwFactory)
         {
-            this.vwFactory = vwFactory;
             Name = "Polo";
-        }
-
-        public override string Assemble()
-        {
-            Hood = vwFactory.CreateHood();
-            Axe = vwFactory.CreateAxe();
-            Interior = vwFactory.CreateInterior();
-
-            return "Assembling " + Name;
         }
     }
 }
