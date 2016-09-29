@@ -7,9 +7,9 @@ using System.Windows;
 
 namespace DprIteratorPattern
 {
-    class NameRepository: IContainer
+   public class NameRepository : IContainer
     {
-        public static string[] Names=new []{"Li", "Li"};
+        public static string[] Names = new[] { "One", "Two", "Three", "Li", "Li" };
 
         public IIterator GetIterator()
         {
@@ -21,18 +21,13 @@ namespace DprIteratorPattern
             private int _index;
             public bool HadNext()
             {
-                if(_index < Names.Length){
-                    return true;
-                }
+                if (_index < Names.Length) return true;
                 return false;
             }
 
             public object Next()
             {
-                if (this.HadNext())
-                {
-                    return Names[_index++];
-                }
+                if (this.HadNext()) return Names[_index++];
                 return null;
             }
         }

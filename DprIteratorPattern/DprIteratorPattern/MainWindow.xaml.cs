@@ -25,7 +25,7 @@ namespace DprIteratorPattern
             InitializeComponent();
 
             NameRepository namesRepository = new NameRepository();
-
+            
             for (var iter = namesRepository.GetIterator(); iter.HadNext();)
             {
                 var name = (string)iter.Next();
