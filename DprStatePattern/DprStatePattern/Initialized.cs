@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DprStatePattern
 {
-    class Initialized
+    public class Initialized : State
     {
     }
 }

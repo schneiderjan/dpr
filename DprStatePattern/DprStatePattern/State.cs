@@ -8,7 +8,7 @@ namespace DprStatePattern
 {
     public abstract class State : IState
     {
-        public void Pull(ProductionChain prodChain)
+        public virtual void Pull(ProductionChain prodChain)
         {
             prodChain.NextState(new Terminated());
         }

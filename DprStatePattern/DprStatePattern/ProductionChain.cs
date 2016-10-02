@@ -13,7 +13,12 @@ namespace DprStatePattern
 
         internal void NextState(State state)
         {
-            currentState = state;    
+            currentState = state;
+        }
+
+        internal void Pull()
+        {
+            currentState.Pull(this);
         }
     }
 }

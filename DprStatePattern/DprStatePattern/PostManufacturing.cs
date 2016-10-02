@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DprStatePattern
 {
-    public class PostManufacturing : IState
+    public class PostManufacturing : State
     {
-        public void Pull(ProductionChain prodChain)
-        {
-            prodChain.NextState( new Terminated());
-        }
+       
     }
 }

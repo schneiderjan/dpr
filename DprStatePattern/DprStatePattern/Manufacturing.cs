@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DprStatePattern
 {
-    class Manufacturing
+    public class Manufacturing : State
     {
+        public override void Pull(ProductionChain prodChain)
+        {
+            prodChain.NextState(new PostManufacturing());
+        }
     }
 }
