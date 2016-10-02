@@ -60,6 +60,7 @@
     <Compile Include="PostManufacturing.cs" />
     <Compile Include="PreManufacturing.cs" />
     <Compile Include="State.cs" />
+    <Compile Include="StateViewModel.cs" />
     <Compile Include="Terminated.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -102,6 +103,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\3d-printer %283%29.png" />
+    <Resource Include="Resources\3d-printer %284%29.png" />
+    <Resource Include="Resources\3d-printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Man.png" />
+    <Resource Include="Resources\Post.png" />
+    <Resource Include="Resources\Pre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

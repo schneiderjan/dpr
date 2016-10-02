@@ -8,5 +8,9 @@ namespace DprStatePattern
 {
     public class Initialized : State
     {
+        public override void Pull(ProductionChain prodChain)
+        {
+            prodChain.NextState(new PreManufacturing());
+        }
     }
 }

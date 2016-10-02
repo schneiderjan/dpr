@@ -20,8 +20,11 @@ namespace DprStatePattern
     /// </summary>
     public partial class MainWindow : Window
     {
+        StateViewModel stateViewModel;
         public MainWindow()
         {
+            stateViewModel = new StateViewModel();
+            this.DataContext = stateViewModel;
             InitializeComponent();
         }
     }
