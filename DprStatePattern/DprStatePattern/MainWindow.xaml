@@ -1,0 +1,54 @@
+﻿<Window x:Class="DprStatePattern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DprStatePattern"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="225" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24.8"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="24.8"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3">
+            <DockPanel HorizontalAlignment="Left">
+                <Button x:Name="btnInit" Content="Initialize" Height="24.8" Width="70"></Button>
+                <Button x:Name="btnTerm" Content="Terminate" Height="24.8" Width="70"></Button>
+            </DockPanel>
+        </Grid>
+        <!--Premanufacturing-->
+        <Grid Grid.Row="1" Grid.Column="0" ShowGridLines="True">
+            <Image x:Name="imgPreManufacturing" Margin="15,15,15,15" Source="Resources/Pre.png"></Image>
+        </Grid>
+        <!--Manufacturing-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Image x:Name="imgManufacturing" Margin="15,15,15,15" Source="Resources/Man.png"></Image>
+        </Grid>
+        <!--PostManufacturing-->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Image x:Name="imgPostManufacturing" Margin="15,15,15,15" Source="Resources/Post.png"></Image>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" >
+            <Button x:Name="btnColumn0" IsEnabled="False"></Button>
+        </Grid>
+        <!--Manufacturing-->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Button x:Name="btnColumn1" IsEnabled="False"></Button>        
+        </Grid>
+        <!--PostManufacturing-->
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Button x:Name="btnColumns2" IsEnabled="False"></Button>
+        </Grid>
+        
+
+    </Grid>
+</Window>
