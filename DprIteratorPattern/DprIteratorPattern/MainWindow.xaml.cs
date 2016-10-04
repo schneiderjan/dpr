@@ -30,7 +30,7 @@ namespace DprIteratorPattern
             {
                 var name = (string)iter.Next();
                 //System.out.println("Name : " + name);
-                ListView.Items.Add("Name :" + name);
+                //ListView.Items.Add("Name :" + name);
             }
         }
     }
