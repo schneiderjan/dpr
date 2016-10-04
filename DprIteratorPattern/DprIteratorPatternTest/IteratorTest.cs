@@ -24,7 +24,15 @@ namespace DprIteratorPatternTest
                 new Channel("DIGI Sport"),
                 new Channel("Dolce Sport"),
                 new Channel("SPORT1"),
-                new Channel("Acasa TV")
+                new Channel("Acasa TV"),
+                new Channel("SPORT1"),
+                new Channel("Dolce Sport"),
+                new Channel("DIGI Sport"),
+                new Channel("PRO TV"),
+                new Channel("TVR"),
+                new Channel("WDR"),
+                new Channel("ZDF"),
+                new Channel("ARD"),
             };
 
             DprIteratorPattern.ChannelRepository repo = new DprIteratorPattern.ChannelRepository();
@@ -35,6 +43,11 @@ namespace DprIteratorPatternTest
             while (iter.HasNext())
             {
                 var iterated = (Channel)iter.Next();
+                actual.Add(iterated);
+            }
+            while (iter.HasPrevious())
+            {
+                var iterated = (Channel)iter.Previous();
                 actual.Add(iterated);
             }
 
