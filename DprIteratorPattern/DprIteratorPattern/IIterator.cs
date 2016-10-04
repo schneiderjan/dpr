@@ -9,8 +9,9 @@ namespace DprIteratorPattern
 {
     public interface IIterator
     {
-        bool HadNext();
-
-        Object Next();
+        bool HasNext();
+        bool HasPrevious();
+        object Next();
+        object Previous();
     }
 }

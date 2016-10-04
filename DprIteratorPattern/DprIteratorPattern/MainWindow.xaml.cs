@@ -20,18 +20,28 @@ namespace DprIteratorPattern
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ChannelRepository channelRepository;
+        IIterator iterator;
         public MainWindow()
         {
             InitializeComponent();
+            channelRepository = new ChannelRepository();
+            iterator = channelRepository.GetIterator();
+            btnChUp.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+        }
 
-            NameRepository namesRepository = new NameRepository();
-            
-            for (var iter = namesRepository.GetIterator(); iter.HadNext();)
-            {
-                var name = (string)iter.Next();
-                //System.out.println("Name : " + name);
-                //ListView.Items.Add("Name :" + name);
-            }
+        private void btnChDown_Click(object sender, RoutedEventArgs e)
+        {
+            var channel = (Channel)iterator.Previous();
+            if (channel == null) return;
+            txtChannel.Text = channel.Name;
+        }
+
+        private void btnChUp_Click(object sender, RoutedEventArgs e)
+        {
+            var channel = (Channel)iterator.Next();
+            if (channel == null) return;
+            txtChannel.Text = channel.Name;
         }
     }
 }

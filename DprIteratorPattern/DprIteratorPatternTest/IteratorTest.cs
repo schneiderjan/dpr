@@ -13,11 +13,11 @@ namespace DprIteratorPatternTest
         {
             //Arrange
             List<string> expected = new List<string> { "One", "Two", "Three", "Li", "Li" };
-            NameRepository repo = new NameRepository();
+            ChannelRepository repo = new ChannelRepository();
             List<string> actual = new List<string>();
 
             //Act
-            for (var iter = repo.GetIterator(); iter.HadNext();)
+            for (var iter = repo.GetIterator(); iter.HasNext();)
             {
                 var iterated = (string)iter.Next();
                 actual.Add(iterated);

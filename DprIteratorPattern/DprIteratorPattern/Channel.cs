@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 
 namespace DprIteratorPattern
 {
-    public class Channel : INotifyPropertyChanged
+    public class Channel
     {
-        private string name;
-        public string Name { get { return name; } set { name = value; NotifyPropertyChanged(); } }
+        public string Name { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        public Channel(string _name)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            Name = _name;
         }
     }
 }
