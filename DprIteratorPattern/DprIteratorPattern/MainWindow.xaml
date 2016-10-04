@@ -10,6 +10,7 @@
         Width="670"
         Background="Beige"
         ResizeMode="NoResize"
+        Icon="Resources/tvicon.png"
        >
     <Grid>
     <Grid.Resources>

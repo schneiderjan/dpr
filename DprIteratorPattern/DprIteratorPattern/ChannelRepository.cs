@@ -9,7 +9,6 @@ namespace DprIteratorPattern
 {
     public class ChannelRepository : IContainer
     {
-        //public static string[] Names = new[] { "One", "Two", "Three", "Li", "Li" };
         public static Channel[] Channels = new[]
         {
             new Channel("ARD"),
@@ -21,7 +20,6 @@ namespace DprIteratorPattern
             new Channel("Dolce Sport"),
             new Channel("SPORT1"),
             new Channel("Acasa TV"),
-
         };
 
         public IIterator GetIterator()
@@ -29,7 +27,7 @@ namespace DprIteratorPattern
             return new ChannelIterator();
         }
 
-        private class ChannelIterator : IIterator
+        public class ChannelIterator : IIterator
         {
 
             private int _index = -1;
