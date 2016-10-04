@@ -63,6 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Channel.cs" />
     <Compile Include="IContainer.cs" />
     <Compile Include="IIterator.cs" />
     <Compile Include="MainWindow.xaml.cs">
