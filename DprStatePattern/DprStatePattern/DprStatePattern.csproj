@@ -55,13 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Initialized.cs" />
-    <Compile Include="Manufacturing.cs" />
-    <Compile Include="PostManufacturing.cs" />
-    <Compile Include="PreManufacturing.cs" />
-    <Compile Include="State.cs" />
-    <Compile Include="StateViewModel.cs" />
-    <Compile Include="Terminated.cs" />
+    <Compile Include="ViewModel\DelegateCommand.cs" />
+    <Compile Include="States\Initialized.cs" />
+    <Compile Include="States\Manufacturing.cs" />
+    <Compile Include="States\PostManufacturing.cs" />
+    <Compile Include="States\PreManufacturing.cs" />
+    <Compile Include="States\State.cs" />
+    <Compile Include="ViewModel\StateViewModel.cs" />
+    <Compile Include="States\Terminated.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -21,11 +21,14 @@ namespace DprStatePattern
     public partial class MainWindow : Window
     {
         StateViewModel stateViewModel;
+        ProductionChain prodChain;
         public MainWindow()
         {
-            stateViewModel = new StateViewModel();
-            this.DataContext = stateViewModel;
             InitializeComponent();
+
+            stateViewModel = new StateViewModel(this);
+            this.DataContext = stateViewModel;
+            
         }
     }
 }

@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace DprStatePattern
 {
-    public class Initialized : State
+    public class Terminated : State
     {
+        public Terminated()
+        {
+            Action = "Terminating";
+        } 
+
         public override void Pull(ProductionChain prodChain)
         {
-            prodChain.NextState(new PreManufacturing());
+            prodChain.NextState(new Initialized());
         }
     }
 }

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DprStatePattern"
         mc:Ignorable="d"
-        Title="MainWindow" Height="225" Width="525">
+        Title="Awesome 3D Printer"
+        Height="225" MinHeight="175" Width="525" MinWidth="350">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="24.8"></RowDefinition>
@@ -20,8 +21,10 @@
 
         <Grid Grid.Row="0" Grid.ColumnSpan="3">
             <DockPanel HorizontalAlignment="Left">
-                <Button x:Name="btnInit" Content="Initialize" Height="24.8" Width="70"></Button>
-                <Button x:Name="btnTerm" Content="Terminate" Height="24.8" Width="70"></Button>
+                <Button x:Name="btnInit" Content="Initialize" Height="24.8" Width="90" Command="{Binding InitializeCommand}"></Button>
+                <Button x:Name="btnEmergencyStop" Content="Emergency Stop" Height="24.8" Width="Auto" IsEnabled="False" Command="{Binding EmergencyStopCommand}"></Button>
+                <TextBlock Text="State: " Margin="15,3.5,0,0"></TextBlock>
+                <TextBlock Text="-" x:Name="txtState" Margin="2,3.5,0,0"></TextBlock>
             </DockPanel>
         </Grid>
         <!--Premanufacturing-->
@@ -38,15 +41,15 @@
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="0" >
-            <Button x:Name="btnColumn0" IsEnabled="False"></Button>
+            <Button Content="PreManufacturing" x:Name="btnColumn0" IsEnabled="False"></Button>
         </Grid>
         <!--Manufacturing-->
         <Grid Grid.Row="2" Grid.Column="1">
-            <Button x:Name="btnColumn1" IsEnabled="False"></Button>        
+            <Button Content="Manufacturing" x:Name="btnColumn1" IsEnabled="False"></Button>        
         </Grid>
         <!--PostManufacturing-->
         <Grid Grid.Row="2" Grid.Column="2">
-            <Button x:Name="btnColumns2" IsEnabled="False"></Button>
+            <Button Content="PostManufacturing" x:Name="btnColumns2" IsEnabled="False"></Button>
         </Grid>
         
 

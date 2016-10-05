@@ -11,12 +11,17 @@ namespace DprStatePattern
             currentState = new Terminated();
         }
 
-        internal void NextState(State state)
+        public void NextState(State state)
         {
-            currentState = state;
+            if (state != null) currentState = state;
         }
 
-        internal void Pull()
+        public string GetStateAction()
+        {
+            return currentState.GetAction();
+        }
+
+        public void Pull()
         {
             currentState.Pull(this);
         }
