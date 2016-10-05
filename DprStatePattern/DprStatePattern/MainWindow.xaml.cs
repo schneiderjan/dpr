@@ -21,7 +21,6 @@ namespace DprStatePattern
     public partial class MainWindow : Window
     {
         StateViewModel stateViewModel;
-        ProductionChain prodChain;
         public MainWindow()
         {
             InitializeComponent();

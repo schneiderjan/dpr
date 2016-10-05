@@ -29,29 +29,29 @@
         </Grid>
         <!--Premanufacturing-->
         <Grid Grid.Row="1" Grid.Column="0" ShowGridLines="True">
-            <Image x:Name="imgPreManufacturing" Margin="15,15,15,15" Source="Resources/Pre.png"></Image>
+            <Image x:Name="imgPreManufacturing" Margin="15,15,15,15" Source="Resources/Pre.png" Opacity="0.5"></Image>
         </Grid>
         <!--Manufacturing-->
         <Grid Grid.Row="1" Grid.Column="1">
-            <Image x:Name="imgManufacturing" Margin="15,15,15,15" Source="Resources/Man.png"></Image>
+            <Image x:Name="imgManufacturing" Margin="15,15,15,15" Source="Resources/Man.png" Opacity="0.5"></Image>
         </Grid>
         <!--PostManufacturing-->
         <Grid Grid.Row="1" Grid.Column="2">
-            <Image x:Name="imgPostManufacturing" Margin="15,15,15,15" Source="Resources/Post.png"></Image>
+            <Image x:Name="imgPostManufacturing" Margin="15,15,15,15" Source="Resources/Post.png" Opacity="0.5"></Image>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="0" >
-            <Button Content="PreManufacturing" x:Name="btnColumn0" IsEnabled="False"></Button>
+        <Grid x:Name="grdPre" Background="LightGray" Grid.Row="2" Grid.Column="0" >
+            <TextBlock Text="PreManufacturing" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="txtColumnPre"></TextBlock>
         </Grid>
         <!--Manufacturing-->
-        <Grid Grid.Row="2" Grid.Column="1">
-            <Button Content="Manufacturing" x:Name="btnColumn1" IsEnabled="False"></Button>        
+        <Grid x:Name="grdMan" Background="LightGray" Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="Manufacturing" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="txtColumnMan"></TextBlock>
         </Grid>
         <!--PostManufacturing-->
-        <Grid Grid.Row="2" Grid.Column="2">
-            <Button Content="PostManufacturing" x:Name="btnColumns2" IsEnabled="False"></Button>
+        <Grid x:Name="grdPost" Background="LightGray" ShowGridLines="True" Grid.Row="2" Grid.Column="2">
+            <TextBlock Text="PostManufacturing" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="txtColumnPost"></TextBlock>
         </Grid>
-        
+
 
     </Grid>
 </Window>
