@@ -8,16 +8,13 @@ namespace DprStatePattern
 {
     public abstract class State : IState
     {
-        public string Action = "Terminated";
+        public string Action = "---";
 
-        public virtual void Pull(ProductionChain prodChain)
+        public virtual State GetState()
         {
-            prodChain.NextState(new Terminated());
+            return this;
         }
 
-        public string GetAction()
-        {
-            return Action;
-        }
+        public abstract void Pull(ProductionChain prodChain);
     }
 }

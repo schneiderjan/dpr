@@ -10,12 +10,9 @@ namespace DprStatePattern
     {
         public Terminated()
         {
-            Action = "Terminating";
-        } 
-
-        public override void Pull(ProductionChain prodChain)
-        {
-            prodChain.NextState(new Initialized());
+            Action = "Terminated";
         }
+
+        public override void Pull(ProductionChain prodChain) { }
     }
 }

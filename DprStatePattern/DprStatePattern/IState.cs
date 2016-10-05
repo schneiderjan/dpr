@@ -9,5 +9,8 @@ namespace DprStatePattern
    public interface IState
     {
         void Pull(ProductionChain prodChain);
+
+        State GetState();
+
     }
 }

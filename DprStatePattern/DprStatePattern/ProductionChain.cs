@@ -8,7 +8,7 @@ namespace DprStatePattern
 
         public ProductionChain()
         {
-            currentState = new Terminated();
+            currentState = new Idle();
         }
 
         public void NextState(State state)
@@ -16,9 +16,9 @@ namespace DprStatePattern
             if (state != null) currentState = state;
         }
 
-        public string GetStateAction()
+        public State GetState()
         {
-            return currentState.GetAction();
+            return currentState.GetState();
         }
 
         public void Pull()

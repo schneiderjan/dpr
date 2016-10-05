@@ -20,10 +20,9 @@ namespace DprStatePattern
         public StateViewModel(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;
-            _prodChain = new ProductionChain();
             _initializeCommand = new DelegateCommand(Initialize);
             _emergencyStopCommand = new DelegateCommand(EmergencyStop);
-            SetTxtState("Terminated");
+            SetTxtState(" - ");
 
             _dispatcherTimer.Tick += dispatcherTimer_Tick;
             _dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
@@ -33,12 +32,43 @@ namespace DprStatePattern
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             _prodChain.Pull();
-            SetTxtState(_prodChain.GetStateAction());
+            var state = _prodChain.GetState();
+            SetControls(state);
+            SetTxtState(state.Action);
+        }
+
+        private void SetControls(State state)
+        {
+            if (state is Initialized) {
+               
+            }
+            else if (state is PreManufacturing) {
+                _mainWindow.imgManufacturing.Opacity = 0.5;
+                _mainWindow.imgPreManufacturing.Opacity = 0.5;
+                _mainWindow.imgPostManufacturing.Opacity = 0.5;
+            }
+            else if (state is Manufacturing) {
+                _mainWindow.imgManufacturing.Opacity = 0.5;
+                _mainWindow.imgPreManufacturing.Opacity = 0.5;
+                _mainWindow.imgPostManufacturing.Opacity = 0.5;
+            }
+            else if (state is PostManufacturing) {
+                _mainWindow.imgManufacturing.Opacity = 0.5;
+                _mainWindow.imgPreManufacturing.Opacity = 0.5;
+                _mainWindow.imgPostManufacturing.Opacity = 0.5;
+            }
+            else if (state is Terminated) {
+                _dispatcherTimer.Stop();
+                _mainWindow.imgManufacturing.Opacity = 0.5;
+                _mainWindow.imgPreManufacturing.Opacity = 0.5;
+                _mainWindow.imgPostManufacturing.Opacity = 0.5;
+            }
+
         }
 
         private void EmergencyStop(object obj)
         {
-
+            _prodChain = new ProductionChain();
         }
 
         private void SetTxtState(string v)
@@ -65,10 +95,8 @@ namespace DprStatePattern
             _mainWindow.btnInit.IsEnabled = false;
             _mainWindow.btnEmergencyStop.IsEnabled = true;
 
+            _prodChain = new ProductionChain();
             _dispatcherTimer.Start();
-
-            _prodChain.Pull();
-            SetTxtState("Initializing ");
         }
 
 
