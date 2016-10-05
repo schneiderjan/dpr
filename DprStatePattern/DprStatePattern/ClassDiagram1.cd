@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DprStatePattern.Idle">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\Idle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.Initialized">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\Initialized.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.Manufacturing">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\Manufacturing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.PostManufacturing">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\PostManufacturing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.PreManufacturing">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\PreManufacturing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.State">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAQ=</HashCode>
+      <FileName>States\State.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DprStatePattern.Terminated">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>States\Terminated.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DprStatePattern.StateViewModel" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAEAABAAAYQAAAABAAACgAAAJIAAAAAAAAAAAAE=</HashCode>
+      <FileName>ViewModel\StateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
