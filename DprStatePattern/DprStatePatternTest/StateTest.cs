@@ -11,7 +11,7 @@ namespace DprStatePatternTest
         private static ProductionChain prodChain;
 
         [TestMethod]
-        public void StateValidOrder_Test()
+        public void StatesValidOrder_Test()
         {
             //Arrange
             prodChain = new ProductionChain();
@@ -33,7 +33,7 @@ namespace DprStatePatternTest
             }
 
             //Assert
-            CollectionAssert.AreEqual(expectedStates, actualStates);
+            CollectionAssert.AreEqual(expectedStates, actualStates, new StateComparer());
         }
     }
 }
