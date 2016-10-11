@@ -57,6 +57,22 @@
       <FileName>States\Terminated.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DprStatePattern.MainWindow">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DprStatePattern.StateViewModel">
+    <Position X="1.5" Y="3" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAEAABAAAYQAAAABAAACgAAAJIAAAAAAAAAAAAE=</HashCode>
+      <FileName>ViewModel\StateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="DprStatePattern.IState">
     <Position X="7.5" Y="0.75" Width="2.75" />
     <TypeIdentifier>
