@@ -17,7 +17,6 @@ namespace DprStatePattern
         private ProductionChain _prodChain;
         private DispatcherTimer _dispatcherTimer = new DispatcherTimer();
 
-
         public StateViewModel(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;
@@ -42,7 +41,6 @@ namespace DprStatePattern
             if (state is PreManufacturing)
             {
                 _mainWindow.imgPreManufacturing.Opacity = 1;
-
                 _mainWindow.grdPre.Background = Brushes.LightGreen;
             }
             else if (state is Manufacturing)
@@ -105,14 +103,14 @@ namespace DprStatePattern
         public ICommand InitializeCommand
         {
             get { return _initializeCommand; }
-            set { _initializeCommand = value; }
+            set { _initializeCommand = value; NotifyPropertyChanged(); }
         }
 
         private ICommand _emergencyStopCommand;
         public ICommand EmergencyStopCommand
         {
             get { return _emergencyStopCommand; }
-            set { _emergencyStopCommand = value; }
+            set { _emergencyStopCommand = value; NotifyPropertyChanged(); }
         }
 
         private void Initialize(object obj)

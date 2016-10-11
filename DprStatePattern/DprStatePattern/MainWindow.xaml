@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:DprStatePattern"
         mc:Ignorable="d"
         Title="Awesome 3D Printer"
+        Icon="Resources/3dicon.png"
         Height="225" MinHeight="175" Width="525" MinWidth="350">
     <Grid>
         <Grid.RowDefinitions>

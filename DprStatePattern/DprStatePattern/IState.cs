@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace DprStatePattern
 {
-   public interface IState
+    public interface IState
     {
         void Pull(ProductionChain prodChain);
 
         State GetState();
-
     }
 }
